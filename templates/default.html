@@ -1,0 +1,13 @@
+<%= partial('header.html') %>
+<header>
+    <span><%= title %></span>
+    <% if (doc.src.indexOf('blog') === 0) { %>
+        <small>A blog post by Jesse Luoto</small>
+    <% } %>
+</header>
+
+<article>
+    <%= content %>
+</article>
+    
+<%= partial('footer.html') %>

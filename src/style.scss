@@ -1,0 +1,103 @@
+@import "variables.scss";
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url('/oswald.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+h1, h2, h3, h4, h5, h6, header {
+    font-family: 'Oswald', sans-serif;
+    padding-top: $fontSize * 2;
+    color: darken(#37474f, 20%);
+    line-height: 1.2em;
+    text-align: center;
+}
+
+h1 {
+    opacity: 0.8;
+    font-size: 1.6em;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $fontSize 'Georgia', serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    
+    > * {
+        max-width: $bodyWidth;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-left: $fontSize;
+        padding-right: $fontSize;
+    }
+}
+
+p {
+    line-height: 1.4em;
+    padding-top: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    article &:first-child {
+        font-size: 1.4em;
+        line-height: 1.4em;
+        padding-bottom: 0.2em;
+    }
+}
+
+header {
+    background: $mainColor;
+    color: #FFF;
+    padding: 1.6em 0.4em;
+    font-size: 2.4em;
+    line-height: 1.35em;
+    text-align: center;
+    max-width: 100%;
+    font-weight: normal;
+    
+    span {
+        max-width: 640px;
+        display: block;
+        margin: 0 auto;
+        text-shadow: 0 3px 0 rgba(0,0,0,0.2);
+    }
+    
+    small {
+        display: block;
+        font-size: 0.5em;
+        font-family: 'Georgia', serif;
+        opacity: 0.8;
+    }
+    
+    img {
+        border-radius: 50%;
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+code, pre {
+    overflow: scroll;
+    max-width: 100%;
+}
+
+a {
+    color: $mainColor;
+    &:visited {
+        color: tint($mainColor, 20%);
+        
+    }
+}
+
+section nav {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}

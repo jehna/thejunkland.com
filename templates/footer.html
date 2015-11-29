@@ -1,0 +1,13 @@
+<footer>
+    <p>This site was made with &#9825; by Jesse Luoto.</p>
+    <p>Header font is <a href="https://www.google.com/fonts/specimen/Oswald">Oswald Regular</a> from Goole Fonts</p>
+    <nav>
+        <% _.each(_.sortByOrder(_.where(docs, {"showInMainMenu": true}), ['menuOrder']), function (_doc) { %>
+            <a <% if(_doc.dest != doc.dest) {%> href="/<%= _doc.dest %>"<% } %>><%= _doc.title %></a>
+        <% }); %>
+    </nav>
+</footer>
+
+<script src="/scripts.js" async></script>
+</body>
+</html>

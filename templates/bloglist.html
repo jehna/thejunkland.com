@@ -1,0 +1,22 @@
+<%= partial('header.html') %>
+
+<header>
+    thejunkland.com
+    <small>A blog and porfolio of Jesse Luoto</small>
+</header>
+
+<article>
+    <%= content %>
+</article>
+
+<section>
+    <nav>
+        <ul>
+            <% _.each(_.filter(docs, function(d) { return d.src.indexOf('blog') === 0 }), function (_doc) { %>
+                <li><a href="/<%= _doc.dest %>"><%= _doc.title %></a></li>
+            <% }); %>
+        </ul>
+    </nav>
+</section>
+
+<%= partial('footer.html') %>

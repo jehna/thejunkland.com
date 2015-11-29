@@ -1,0 +1,37 @@
+{
+  "name": "thejunkland",
+  "version": "2.0.0",
+  "description": "thejunkland.com website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Luoto",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-markdown-site": "^3.0.0",
+    "grunt-text-replace": "^0.4.0"
+  },
+  "dependencies": {
+    "grunt-cli": "^0.1.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jehna/thejunkland.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jehna/thejunkland.com/issues"
+  },
+  "homepage": "https://github.com/jehna/thejunkland.com#readme"
+}
