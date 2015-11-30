@@ -18,7 +18,7 @@ takes. And here's my journey.
 # A very different mindset
 
 As I mentioned before, designers might not be aware of the performance 
-consequences of their work. Therefor it might be impossible for the developer to
+consequences of their work. Therefore it might be impossible for the developer to
 salvage the outcome when the front page's images alone take 20MiB to download.
 
 This is where a *performance budget* becomes handy. As Tim Kadlec explains in
@@ -87,7 +87,7 @@ rendered. The flow goes somewhat like this:
 7. CSS file parsing and document rendering _~10ms_
 
 So this extra round-trip to download the CSS file nearly doubles the time needed
-to render the first image to the user. Therefor it makes sense to actually
+to render the first image to the user. Therefore it makes sense to actually
 inline some of the CSS so we can save at least the network latency on the first
 load.
 
@@ -107,7 +107,7 @@ if (raf) raf(cb);
 else window.addEventListener('load', cb);
 ```
 
-To get the wanted result result, we have to inline a subset of the CSS (I
+To get the wanted result, we have to inline a subset of the CSS (I
 inlined the loader part) and lazy-load the rest of the CSS. I used a simple
 `grunt-contrib-replace` plugin to do the dirty job. Deploy, fire up PageSpeed
 and see how we did:
