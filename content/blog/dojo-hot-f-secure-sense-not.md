@@ -1,5 +1,5 @@
 ---
-title: Why Dojo is hot, but F-Secure Sense is not
+title: Why Dojo is hot, but F&#8209;Secure Sense is not
 draft: true
 ---
 
