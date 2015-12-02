@@ -107,11 +107,27 @@ module.exports = function(grunt) {
                 }
             }
         },
+        responsive_images: {
+            default: {
+                options: {
+                    sizes: [{
+                        width: 702,
+                        rename: false
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'tmp/'
+                }]
+            }
+        },
         imagemin: {
             default: {
                 files: [{
                     expand: true,
-                    cwd: 'src/',
+                    cwd: 'tmp/',
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'build/'
                 }]
@@ -134,6 +150,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-responsive-images');
 
     grunt.registerTask('build', [
         'clean:before', // First clean old build dir
@@ -145,6 +162,7 @@ module.exports = function(grunt) {
         'post-filerev', // Covert filerev result to replace config
         'replace', // Fix the filerev's paths in /build folder
         'htmlmin', // Minify HTML
+        'responsive_images', // Resize images
         'imagemin', // Minify images
         'clean:after' // Cleanup /tmp
     ]);
