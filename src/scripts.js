@@ -11,7 +11,7 @@ else window.addEventListener('load', cb);
 window.addEventListener("load", function() {
     var s=screen,d=document,l=localStorage,i=new XMLHttpRequest();
     var url = "http://www.google-analytics.com/collect?" + 
-              "uid=" + (l.uid = l.uid || Math.random()+"."+Math.random())+
+              "cid=" + (l.uid = l.uid || Math.random()+"."+Math.random())+
               "&v=1"+
               "&tid=UA-32702642-1"+
               "&t=pageview"+
