@@ -29,9 +29,9 @@ for just a little bit.
 
 > What if, despite of it's design, this is the next "big thing"?
 
-As a tech-savvy person, interested in all the buzzwords associated with the
-product, I believe I'd be one of the [first 10% of people][diffusion-of-innovation]
-to actually try this product, although it resembled a $10 coffee machine.
+As a person interested in all the buzzwords associated with the product, I
+believe I'd be one of the [first 10% of people][diffusion-of-innovation] to
+actually try this product, although it resembles a $10 coffee machine.
 
 But, as a tech-savvy person (whatever that means), I need to know *how* things
 work. And here's the problem: I still have absolutely no idea how Sense works. All
@@ -49,7 +49,7 @@ this thing.
 ![WAN port on Sense](/images/wan-port-sense.jpg)
 
 Now that I imagine this thingie sitting in between my devices and my Internet
-connection, I can guess that some thingie inside this **magical Wlan router**
+connection, I can guess that some thingie inside this **magical WLAN router**
 should keep me private and block viruses. But after that things get tricky.
 
 ### [Butt](cloud-to-butt)-enabled security
@@ -61,7 +61,7 @@ Sense's website:
 
 Right. So if I try to translate this, I believe it somehow sends bits of your
 internet traffic to F-Secure's computers, aka. *the cloud*, so F-Secure can
-use all this data <del>to track you</del> *\*ahem\** to try to keep the bad guys
+use all this data <del>to track you</del> ***&lowast;ahem&lowast;*** to try to keep the bad guys
 out of your network.
 
 The most baffling thing, though, is that Sense claims to protect all my devices,
