@@ -5,14 +5,14 @@
     <url>
         <loc>http://thejunkland.com/</loc>
         <% var lastMod = new Date(_.reduce(docs, function(a,b) { return Math.max(a,b.modified) || a; }, 0)); %>
-        <lastmod><%= lastMod.getFullYear() %>-<%= lastMod.getMonth()+1 %>-<%= lastMod.getDate() %></lastmod>
+        <lastmod><%= lastMod.getFullYear() %>-<%= ("0"+(lastMod.getMonth()+1)).slice(-2) %>-<%= ("0"+lastMod.getDate()).slice(-2) %></lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.3</priority>
     </url>
     <% _.each(_.filter(docs, function(d) { return d.dest !== 'index.html' && d.dest !== 'sitemap.xml' && d.draft !== true }), function (_doc) { var lastMod = new Date(_doc.modified); %>
         <url>
             <loc>http://thejunkland.com/<%= _doc.dest %></loc>
-            <lastmod><%= lastMod.getFullYear() %>-<%= lastMod.getMonth()+1 %>-<%= lastMod.getDate() %></lastmod>
+            <lastmod><%= lastMod.getFullYear() %>-<%= ("0"+(lastMod.getMonth()+1)).slice(-2) %>-<%= ("0"+lastMod.getDate()).slice(-2) %></lastmod>
             <changefreq>never</changefreq>
             <priority><%= _doc.priority || 0.5 %></priority>
         </url>
