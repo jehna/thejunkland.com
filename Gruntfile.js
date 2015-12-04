@@ -61,6 +61,10 @@ module.exports = function(grunt) {
                 files: [
                     {expand: true, cwd: 'src/', src: ['*.woff'], dest: 'build/', filter: 'isFile'}
                 ]
+            },
+            sitemap: {
+                src: 'build/sitemap.html',
+                dest: 'build/sitemap.xml'
             }
         },
         filerev: {
@@ -135,7 +139,7 @@ module.exports = function(grunt) {
         },
         clean: {
             before: ['build/**/*'],
-            after: ['tmp']
+            after: ['tmp', 'build/sitemap.html']
         }
     });
 
@@ -156,8 +160,8 @@ module.exports = function(grunt) {
         'clean:before', // First clean old build dir
         'compass', // Compile styles to /tmp
         'cssmin', // Minify the CSS in /tmp
-        'copy', // Copy ready files to /build
         'site', // Compile .md files to /build
+        'copy', // Copy ready files to /build
         'filerev', // Revision .js and .css files in /build
         'post-filerev', // Covert filerev result to replace config
         'replace', // Fix the filerev's paths in /build folder

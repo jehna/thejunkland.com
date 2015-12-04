@@ -2,6 +2,7 @@
 title: About
 showInMainMenu: true
 menuOrder: 10
+modified: 1449180000000
 ---
 
 This website serves as the blog and somewhat portfolio of Jesse Luoto. The blog
