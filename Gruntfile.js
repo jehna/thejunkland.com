@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             },
             fonts: {
                 files: [
-                    {expand: true, cwd: 'src/', src: ['*.woff2'], dest: 'build/', filter: 'isFile'}
+                    {expand: true, cwd: 'src/', src: ['*.woff'], dest: 'build/', filter: 'isFile'}
                 ]
             }
         },
