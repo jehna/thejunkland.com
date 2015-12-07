@@ -53,7 +53,7 @@ So the whole workflow to make a commit goes like this:
 ```bash
 git add -A  # Adds all modified and added files to stash
 git stash  # Pushes the changes to stash
-git difftool -y stash  # Go trough all the changes one by one
+git difftool -y stash  # Go through all the changes one by one
 git commit -a  # Commit all changes
 git stash pop  # Bring the remaining changes back to the stage
 ```
