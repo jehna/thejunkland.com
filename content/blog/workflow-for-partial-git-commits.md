@@ -1,7 +1,6 @@
 ---
 title: Workflow for partial Git commits
-draft: true
-modified: 1449473991183
+modified: 1449528542165
 ---
 
 Here's the scenario: You've coded for a whole day and not done a single `git
