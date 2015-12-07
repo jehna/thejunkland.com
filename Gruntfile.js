@@ -59,8 +59,12 @@ module.exports = function(grunt) {
             },
             fonts: {
                 files: [
-                    {expand: true, cwd: 'src/', src: ['*.woff2'], dest: 'build/', filter: 'isFile'}
+                    {expand: true, cwd: 'src/', src: ['*.woff'], dest: 'build/', filter: 'isFile'}
                 ]
+            },
+            sitemap: {
+                src: 'build/sitemap.html',
+                dest: 'build/sitemap.xml'
             }
         },
         filerev: {
@@ -107,11 +111,27 @@ module.exports = function(grunt) {
                 }
             }
         },
+        responsive_images: {
+            default: {
+                options: {
+                    sizes: [{
+                        width: 702,
+                        rename: false
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'tmp/'
+                }]
+            }
+        },
         imagemin: {
             default: {
                 files: [{
                     expand: true,
-                    cwd: 'src/',
+                    cwd: 'tmp/',
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'build/'
                 }]
@@ -119,7 +139,7 @@ module.exports = function(grunt) {
         },
         clean: {
             before: ['build/**/*'],
-            after: ['tmp']
+            after: ['tmp', 'build/sitemap.html']
         }
     });
 
@@ -134,17 +154,19 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-responsive-images');
 
     grunt.registerTask('build', [
         'clean:before', // First clean old build dir
         'compass', // Compile styles to /tmp
         'cssmin', // Minify the CSS in /tmp
-        'copy', // Copy ready files to /build
         'site', // Compile .md files to /build
+        'copy', // Copy ready files to /build
         'filerev', // Revision .js and .css files in /build
         'post-filerev', // Covert filerev result to replace config
         'replace', // Fix the filerev's paths in /build folder
         'htmlmin', // Minify HTML
+        'responsive_images', // Resize images
         'imagemin', // Minify images
         'clean:after' // Cleanup /tmp
     ]);

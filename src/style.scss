@@ -3,8 +3,7 @@
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'), url('/oswald.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url('/oswald.woff') format('woff');
 }
 
 h1, h2, h3, h4, h5, h6, header {
@@ -13,6 +12,11 @@ h1, h2, h3, h4, h5, h6, header {
     color: darken(#37474f, 20%);
     line-height: 1.2em;
     text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
@@ -57,7 +61,7 @@ header {
     color: #FFF;
     padding: 1.6em 0.4em;
     font-size: 2.4em;
-    line-height: 1.35em;
+    line-height: 1.20em;
     text-align: center;
     max-width: 100%;
     font-weight: normal;

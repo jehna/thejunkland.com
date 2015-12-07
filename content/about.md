@@ -2,6 +2,7 @@
 title: About
 showInMainMenu: true
 menuOrder: 10
+modified: 1449180000000
 ---
 
 This website serves as the blog and somewhat portfolio of Jesse Luoto. The blog
@@ -17,7 +18,7 @@ Site is also open source and [available on GitHub][site-github] with MIT
 license. Text content is licensed with Creative Commons
 Attribution-NonCommercial 2.5 License.
 
-# About the author <img src="/me.jpg" width="100" height="100" class="round">
+# About the author <img src="/images/me.jpg" width="100" height="100" class="round">
 
 
 Jesse Luoto is the CTO of CreateTrips. During his [10+ years of programming][LinkedIn]
