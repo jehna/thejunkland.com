@@ -14,7 +14,7 @@ If you've ever done a commit with XCode, you know that there is one thing the
 Apple's developers got right: The Version Editor that's shown before you do your
 commit.
 
-![Xcode version editor](/imges/xcode-version-editor.png)
+![Xcode version editor](/images/xcode-version-editor.png)
 
 The point is that before you make your commit, you can briefly go trough every
 file and *choose* whether to include that specific change or not.
