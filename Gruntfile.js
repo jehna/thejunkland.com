@@ -125,6 +125,21 @@ module.exports = function(grunt) {
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'tmp/'
                 }]
+            },
+            retinaPNG: {
+                options: {
+                    sizes: [{
+                        width: 702*2,
+                        suffix: '-x2',
+                        rename: false
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*.{png,gif}'],
+                    dest: 'tmp/'
+                }]
             }
         },
         imagemin: {
