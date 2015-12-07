@@ -1,5 +1,7 @@
 ---
 title: Git difftool to stash
+draft: true
+modified: 1449473991183
 ---
 
 Here's the scenario: You've coded for a whole day and not done a single `git
