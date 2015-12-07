@@ -28,7 +28,7 @@ git add .
 git commit
 ```
 
-The bad this is, that you automatically commit everything that you've touched
+The bad thing is, that you automatically commit everything that you've touched
 since the last commit. So how could we change this workflow to have the same
 effect as with the XCode's version editor?
 
