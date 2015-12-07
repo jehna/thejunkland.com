@@ -1,5 +1,5 @@
 ---
-title: Git difftool to stash
+title: Workflow for partial Git commits
 draft: true
 modified: 1449473991183
 ---
@@ -28,15 +28,15 @@ git add .
 git commit
 ```
 
-The bad thing is, that you automatically commit everything that you've touched
+The bad news is, that you automatically commit everything that you've touched
 since the last commit. So how could we change this workflow to have the same
 effect as with the XCode's version editor?
 
 ## Introducing stash diff
 
 The good news is, that you can do a trick with the `git stash` that pretty much
-mimics the workflow from XCode. This trick is, that you can do a `git diff` also
-to the most recent `stash`:
+mimics the workflow from XCode. This trick being, that you can do a `git diff`
+also to the most recent `stash`:
 
 ```bash
 git diff stash
