@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "highlightjs-style.scss";
 @import url(https://fonts.googleapis.com/css?family=Oswald:300|Gentium+Basic);
 
 h2 {
@@ -12,17 +13,21 @@ ul, ol {
     margin-bottom: 0;
 }
 
+code {
+    display: inline;
+}
+
 code, pre {
-    background: #EEE;
+    //background: #EEE;
     font-size: 0.8em;
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
 
 pre code {
-    padding: 0;
-    border-radius: 0;
-    background: trasparent;
+    //padding: 0;
+    //border-radius: 0;
+    //background: trasparent;
     font-size: 1em;
 }
 
@@ -70,4 +75,9 @@ body > footer {
     border-radius: 50%;
     margin: 11px auto -9px;
     display: block;
+}
+
+.lang-bash .code-line::before {
+    content: "$ ";
+    color: #bf79db;
 }

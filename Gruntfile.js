@@ -18,7 +18,20 @@ module.exports = function(grunt) {
                 options: {
                     site: {},
                     extend: {},
-                    marked: {},
+                    marked: {
+                        gfm: true,
+                        highlight: function (code, lang) {
+                            if (lang == '' || lang == 'nohighlight') {
+                                return code;
+                            }
+                            if (lang == 'bash') {
+                                return code.split('\n').map(function(c) {
+                                    return '<span class="code-line">' + c + '</span>';
+                                }).join('\n');
+                            }
+                            return require('highlight.js').highlightAuto(code).value;
+                        }
+                    },
                     templates: 'templates',
                     defaultTemplate: 'default.html'
                 },
@@ -123,6 +136,21 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**/*.{png,jpg,gif}'],
+                    dest: 'tmp/'
+                }]
+            },
+            retinaPNG: {
+                options: {
+                    sizes: [{
+                        width: 702*2,
+                        suffix: '-x2',
+                        rename: false
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*.{png,gif}'],
                     dest: 'tmp/'
                 }]
             }
