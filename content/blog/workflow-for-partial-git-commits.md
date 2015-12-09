@@ -52,7 +52,7 @@ adding the changes back to stage one by one.
 
 So let's go through the whole workflow one by one.
 
-## Add everything to git
+## 1. Add everything to git
 
 You should start up with your regular flow to make sure all changes are added to
 your git.
@@ -64,7 +64,7 @@ git add -A
 The `-A` flag adds every file to be committed, regardless of which directory
 you're currently in.
 
-## Push the changes to stash
+## 2. Push the changes to stash
 
 ```bash
 git stash
@@ -73,7 +73,7 @@ git stash
 It doesn't matter if you already have something in your stash, since this
 command always adds a new stash to the stack.
 
-## Pick which changes to commit
+## 3. Pick which changes to commit
 
 The following command opens up your difftool, which lets you pick the changes
 you've made one by one back to stage:
@@ -98,7 +98,7 @@ file.
 
 <img alt="Say yes to OpenDiff" src="/images/opendiff-confirm.png" width="451">
 
-## Perform the commit
+## 4. Perform the commit
 
 Up next is your common routine: committing.
 
@@ -108,7 +108,7 @@ git commit -a
 
 This creates a commit from the changes you just selected from the diff.
 
-## Pull back rest of the changes
+## 5. Pull back rest of the changes
 
 Now we should head back to where we started. We can do this by popping the most
 recently pushed stash:
