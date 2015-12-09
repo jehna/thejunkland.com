@@ -81,3 +81,14 @@ body > footer {
     content: "$ ";
     color: #bf79db;
 }
+
+dl {
+    dt {
+        font-weight: bold;
+        padding-top: 0.2em;
+    }
+    img {
+        display: inline-block;
+        margin: 0;
+    }
+}
