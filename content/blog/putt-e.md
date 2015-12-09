@@ -1,7 +1,6 @@
 ---
 title: Making a game in 12 hours
-modified: 1449684225909
-draft: true
+modified: 1449687800925
 ---
 
 Failing is a big part of design process. *Fast* failing. So **how fast** could I
