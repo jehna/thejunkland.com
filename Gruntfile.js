@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             files: ['src/**/*', 'templates/**/*', 'content/**/*'],
-            tasks: ['build']
+            tasks: ['build-fast']
         },
         compass: {
             default: {
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'tmp/'
+                    dest: 'build/'
                 }]
             },
             retinaPNG: {
@@ -154,7 +154,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**/*.{png,gif}'],
-                    dest: 'tmp/'
+                    dest: 'build/'
                 }]
             }
         },
@@ -162,7 +162,7 @@ module.exports = function(grunt) {
             default: {
                 files: [{
                     expand: true,
-                    cwd: 'tmp/',
+                    cwd: 'build/',
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'build/'
                 }]
@@ -195,13 +195,23 @@ module.exports = function(grunt) {
         'copy', // Copy ready files to /build
         'filerev', // Revision .js and .css files in /build
         'post-filerev', // Covert filerev result to replace config
-        'replace', // Fix the filerev's paths in /build folder
+        'replace:inlineCSS', // Inline the header CSS
+        'replace:filerev', // Fix the filerev's paths in /build folder
         'htmlmin', // Minify HTML
         'responsive_images', // Resize images
         'imagemin', // Minify images
         'clean:after' // Cleanup /tmp
     ]);
-    grunt.registerTask('default', ['browserSync', 'build', 'watch']);
+    
+    grunt.registerTask('build-fast', [
+        'compass', // Compile styles to /tmp
+        'site', // Compile .md files to /build
+        'copy', // Copy ready files to /build
+        'replace:inlineCSS', // Inline the header CSS
+        'responsive_images', // Resize images
+        'clean:after' // Cleanup /tmp
+    ]);
+    grunt.registerTask('default', ['browserSync', 'build-fast', 'watch']);
     
     grunt.registerTask('post-filerev', function() {
         var mapped = [];
