@@ -81,3 +81,7 @@ body > footer {
     content: "$ ";
     color: #bf79db;
 }
+
+body.draft {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='170px' width='250px'><text x='-10' y='95' fill='rgba(255,0,0,0.05)' font-size='50' transform='rotate(-40, 90,25)'>DRAFT</text></svg>")
+}
