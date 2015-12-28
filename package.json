@@ -1,6 +1,7 @@
 {
   "name": "thejunkland",
   "website": "http://thejunkland.com/",
+  "scp": "jehna@thejunkland.com:~/thejunkland.com/",
   "version": "2.0.0",
   "description": "thejunkland.com website",
   "main": "index.html",
@@ -23,6 +24,7 @@
     "grunt-filerev": "^2.3.1",
     "grunt-markdown-site": "^3.0.0",
     "grunt-responsive-images": "^0.1.7",
+    "grunt-scp": "^0.1.8",
     "grunt-text-replace": "^0.4.0",
     "highlight": "^0.2.4"
   },

@@ -3,8 +3,22 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
-            files: ['src/**/*', 'templates/**/*', 'content/**/*'],
-            tasks: ['build']
+            images: {
+                files: ['src/images/**/*'],
+                tasks: ['responsive_images']
+            },
+            css: {
+                files: ['src/**/*.scss'],
+                tasks: ['compass', 'replace:inlineCSS']
+            },
+            generalFiles: {
+                files: ['!src/**/*.scss', 'src/*.*'],
+                tasks: ['copy']
+            },
+            templates: {
+                files: ['templates/**/*', 'content/**/*'],
+                tasks: ['site', 'replace:inlineCSS']
+            }
         },
         compass: {
             default: {
@@ -123,7 +137,7 @@ module.exports = function(grunt) {
                 watchTask: true,
                 server: {
                     baseDir: 'build/',
-                    index: 'build/index.html'
+                    index: 'index.html'
                 }
             }
         },
@@ -139,7 +153,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'tmp/'
+                    dest: 'build/'
                 }]
             },
             retinaPNG: {
@@ -154,7 +168,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'src/',
                     src: ['**/*.{png,gif}'],
-                    dest: 'tmp/'
+                    dest: 'build/'
                 }]
             }
         },
@@ -162,9 +176,18 @@ module.exports = function(grunt) {
             default: {
                 files: [{
                     expand: true,
-                    cwd: 'tmp/',
+                    cwd: 'build/',
                     src: ['**/*.{png,jpg,gif}'],
                     dest: 'build/'
+                }]
+            }
+        },
+        scp: {
+            deploy: {
+                files: [{
+                    cwd: 'build/',
+                    src: '**/*',
+                    filter: 'isFile'
                 }]
             }
         },
@@ -186,6 +209,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-scp');
 
     grunt.registerTask('build', [
         'clean:before', // First clean old build dir
@@ -195,13 +219,23 @@ module.exports = function(grunt) {
         'copy', // Copy ready files to /build
         'filerev', // Revision .js and .css files in /build
         'post-filerev', // Covert filerev result to replace config
-        'replace', // Fix the filerev's paths in /build folder
+        'replace:inlineCSS', // Inline the header CSS
+        'replace:filerev', // Fix the filerev's paths in /build folder
         'htmlmin', // Minify HTML
         'responsive_images', // Resize images
         'imagemin', // Minify images
         'clean:after' // Cleanup /tmp
     ]);
-    grunt.registerTask('default', ['browserSync', 'build', 'watch']);
+    
+    grunt.registerTask('build-fast', [
+        'compass', // Compile styles to /tmp
+        'site', // Compile .md files to /build
+        'copy', // Copy ready files to /build
+        'replace:inlineCSS', // Inline the header CSS
+        'responsive_images', // Resize images
+    ]);
+    grunt.registerTask('default', ['browserSync', 'build-fast', 'watch']);
+    grunt.registerTask('deploy', ['build', 'pre-scp', 'scp']);
     
     grunt.registerTask('post-filerev', function() {
         var mapped = [];
@@ -217,5 +251,22 @@ module.exports = function(grunt) {
             });
         }
         grunt.config('replace.filerev.replacements', mapped);
+    });
+    
+    grunt.registerTask('pre-scp', function() {
+        
+        var options = {};
+        
+        var scp = grunt.config('pkg.scp');
+        scp = scp.split('@');
+        options.username = scp[0];
+        scp = scp[1];
+        scp = scp.split(':');
+        options.host = scp[0];
+        var path = scp[1];
+        
+        grunt.config('scp.deploy.files.0.dest', path);
+        
+        grunt.config('scp.options', options);
     });
 };
