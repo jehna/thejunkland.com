@@ -27,14 +27,15 @@ To use the project as your own website, you might want to change the following
 parameters from `package.json` file.
 
 #### website
-Type: `String`
+Type: `String`  
 Template: `<%= site.pkg.website %>`
 
 Defines the base URL for your website. Used, where the full, absolute URL is
 needed.
 
+
 #### scp
-Type: `String`
+Type: `String`  
 Format: `username@domain:path`
 
 The SCP configuration for the `grunt deploy` task. All the built files will be
