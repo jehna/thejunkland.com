@@ -48,8 +48,8 @@ Google Analytics servers.
 # Why not to just copy the analytics.js to my server?
 
 If you've done googling like I have, you probably have stumbled to many other
-solutions. Commonly they suggest that you either download the `anlytics.js` file
-to your own server or use some proxy in the between.
+solutions. Commonly they suggest that you either download the `analytics.js`
+file to your own server or use some proxy in the between.
 
 If you'd just copy the `analytics.js` file to your own server, it would
 potentially break at any minute. This is, because Google *wants* to change
@@ -74,7 +74,7 @@ This is heavily discouraged for two big reasons:
    the script at any time.
 
 As a rule of thumb, you should not include any code to your website/product that
-you have not gone trough or use a vendor that you don't trust.
+you have not gone through or use a vendor that you don't trust.
 
 The good thing about *ga-lite* is, that anyone can easily go through all the
 source code and build it themselves. And you can compare the built source code
