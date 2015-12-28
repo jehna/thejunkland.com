@@ -137,7 +137,7 @@ module.exports = function(grunt) {
                 watchTask: true,
                 server: {
                     baseDir: 'build/',
-                    index: 'build/index.html'
+                    index: 'index.html'
                 }
             }
         },
