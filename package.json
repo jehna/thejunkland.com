@@ -1,7 +1,7 @@
 {
   "name": "thejunkland",
   "website": "http://thejunkland.com/",
-  "scp": "jehna@thejunkland.com:~/thejunkland.com/",
+  "scp": "jehna@thejunkland.com:thejunkland.com/",
   "version": "2.0.0",
   "description": "thejunkland.com website",
   "main": "index.html",
