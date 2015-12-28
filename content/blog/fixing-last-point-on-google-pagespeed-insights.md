@@ -7,15 +7,18 @@ modified: 1451262042692
 If you've tried to build your site to 100/100 in the Google PageSpeed Insights,
 you might have bumped in the following warning:
 
-> Leverage browser caching<br />
-> Setting an expiry date or a maximum age in the HTTP headers for static
-> resources instructs the browser to load previously downloaded resources from
-> local disk rather than over the network. Leverage browser caching for the
-> following cacheable resources:<br />
-> http://www.google-analytics.com/analytics.js (2 hours)
+<div style="background:#f7f7f7; padding: 12px 12px 9px; font-family: sans-serif; font-size: 14px; margin: 20px 0 15px;">
+<div style="font-size: 1.2em;">Leverage browser caching</div>
+<p style="padding-top: 1em;">**Setting an expiry date or a maximum age in the HTTP headers for static
+resources instructs the browser to load previously downloaded resources from
+local disk rather than over the network.**</p>
+<p style="padding-top: 1em;">Leverage browser caching for the following cacheable resources:</p>
+<ul style="background-color: #fff;padding-left: 0;"><li style="list-style: none; padding: 3px;">http://www.google-analytics.com/analytics.js (2 hours)</li></ul>
+</div>
+
 
 As you might want to use GA in your site, the 99/100 PageSpeed score might get
-frustrating. Especially because Google itself has stated
+frustrating. Especially because Google Analytics team itself has stated
 [it won't fix the issue][analytics-js-wontfix].
 
 # Fixing the issue
