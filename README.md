@@ -17,10 +17,11 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 Once you're familiar with that process, you may compile this project using:
 
 ```bash
-grunt build
+grunt
 ```
 
-This compiles the project to `build/` folder.
+This compiles the project to `build/` folder and starts a local web server that
+autoreloads files as you change them.
 
 ### Setup
 
