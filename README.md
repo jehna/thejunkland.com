@@ -41,6 +41,18 @@ Format: `username@domain:path`
 The SCP configuration for the `grunt deploy` task. All the built files will be
 copied to the destination path on the server.
 
+### Deploying
+
+You can deploy the project straight to your web server (using SCP) by entering
+the following command:
+
+```
+grunt deploy
+```
+
+Note that after the clean build, this command will prompt for the SCP password
+for the user defined in the `package.json` file.
+
 ## Contributions
 If you find a bug (or even a typo), please open an issue. You are free to
 improve the site via pull requests.
