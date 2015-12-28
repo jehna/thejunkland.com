@@ -37,7 +37,7 @@ The easiest way to install the script is to include the CDN version to you HTML
 code:
 
 ```HTML
-<script src="https://cdn.jsdelivr.net/ga-lite/1.0.0/ga-lite.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
 <script>
 var galite = galite || {};
 galite.UA = 'UA-XXXXXX'; // Insert your tracking code here
