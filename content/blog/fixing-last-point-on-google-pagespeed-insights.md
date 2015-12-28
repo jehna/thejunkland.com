@@ -67,7 +67,7 @@ version of the `analytics.js`, potentially breaking the analytics tracking.
 The next logical step would be to use [a proxy][proxy] that keeps up the most
 current version of the script, but sets the "correct" headers for you.
 
-This is heavily discouraged for two big reasons:
+This is heavily discouraged for two main reasons:
 
 1. Google wants to keep the ownership of the script. So if they make a breaking
    change, every single `analytics.js` will be up-to-date within 2 hours. But
