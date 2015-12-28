@@ -3,8 +3,22 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
-            files: ['src/**/*', 'templates/**/*', 'content/**/*'],
-            tasks: ['build-fast']
+            images: {
+                files: ['src/images/**/*'],
+                tasks: ['responsive_images']
+            },
+            css: {
+                files: ['src/**/*.scss'],
+                tasks: ['compass', 'replace:inlineCSS']
+            },
+            generalFiles: {
+                files: ['!src/**/*.scss', 'src/*.*'],
+                tasks: ['copy']
+            },
+            templates: {
+                files: ['templates/**/*', 'content/**/*'],
+                tasks: ['site', 'replace:inlineCSS']
+            }
         },
         compass: {
             default: {
@@ -209,7 +223,6 @@ module.exports = function(grunt) {
         'copy', // Copy ready files to /build
         'replace:inlineCSS', // Inline the header CSS
         'responsive_images', // Resize images
-        'clean:after' // Cleanup /tmp
     ]);
     grunt.registerTask('default', ['browserSync', 'build-fast', 'watch']);
     
