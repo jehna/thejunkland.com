@@ -1,7 +1,6 @@
 ---
 title: Fixing the last point on Google PageSpeed Insights
-draft: true
-modified: 1451262042692
+modified: 1451305824890
 ---
 
 If you've tried to build your site to 100/100 in the Google PageSpeed Insights,
