@@ -51,9 +51,13 @@ If you've done googling like I have, you probably have stumbled to many other
 solutions. Commonly they suggest that you either download the `analytics.js`
 file to your own server or use some proxy in the between.
 
+Google itself [does not recommend][downloading-ga] downloading `analytics.js`
+to your own server, so they can ensure your analytics data won't get broken
+after they update their code.
+
 If you'd just copy the `analytics.js` file to your own server, it would
-potentially break at any minute. This is, because Google *wants* to change
-things often and thus keep the ownership of the file.
+potentially break at any minute. This is, because Google makes updates to their
+code from time to time.
 
 So if Google changes something, that leaves your website hanging with the *old*
 version of the `analytics.js`, potentially breaking the analytics tracking.
@@ -125,3 +129,4 @@ fork the repo and create a pull request.
 [send-beacon]:https://github.com/jehna/ga-lite/blob/c27c9c2698e3d8ddf29bd5a68f412b9e8e901c45/src/ga-lite.js#L44
 [ga-lite-issue]:https://github.com/jehna/ga-lite/issues/new
 [outside-vendor]:http://sourceforge.net/projects/schedule-analytics/
+[downloading-ga]:https://support.google.com/analytics/answer/1032389?hl=en
