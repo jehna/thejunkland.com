@@ -182,6 +182,15 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        scp: {
+            deploy: {
+                files: [{
+                    cwd: 'build/',
+                    src: '**/*',
+                    filter: 'isFile'
+                }]
+            }
+        },
         clean: {
             before: ['build/**/*'],
             after: ['tmp', 'build/sitemap.html']
@@ -200,6 +209,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-scp');
 
     grunt.registerTask('build', [
         'clean:before', // First clean old build dir
@@ -225,6 +235,7 @@ module.exports = function(grunt) {
         'responsive_images', // Resize images
     ]);
     grunt.registerTask('default', ['browserSync', 'build-fast', 'watch']);
+    grunt.registerTask('deploy', ['build', 'pre-scp', 'scp']);
     
     grunt.registerTask('post-filerev', function() {
         var mapped = [];
@@ -240,5 +251,22 @@ module.exports = function(grunt) {
             });
         }
         grunt.config('replace.filerev.replacements', mapped);
+    });
+    
+    grunt.registerTask('pre-scp', function() {
+        
+        var options = {};
+        
+        var scp = grunt.config('pkg.scp');
+        scp = scp.split('@');
+        options.username = scp[0];
+        scp = scp[1];
+        scp = scp.split(':');
+        options.host = scp[0];
+        var path = scp[1];
+        
+        grunt.config('scp.deploy.files.0.dest', path);
+        
+        grunt.config('scp.options', options);
     });
 };
