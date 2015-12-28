@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         watch: {
             files: ['src/**/*', 'templates/**/*', 'content/**/*'],
             tasks: ['build']
@@ -16,7 +17,9 @@ module.exports = function(grunt) {
         site: {
             default: {
                 options: {
-                    site: {},
+                    site: {
+                        pkg: grunt.file.readJSON('package.json')
+                    },
                     extend: {},
                     marked: {
                         gfm: true,
