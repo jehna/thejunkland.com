@@ -22,6 +22,18 @@ grunt build
 
 This compiles the project to `build/` folder.
 
+### Setup
+
+To use the project as your own website, you might want to change the following
+parameters from `package.json` file.
+
+#### website
+Type: `String`
+Template: `<%= site.pkg.website %>`
+
+Defines the base URL for your website. Used, where the full, absolute URL is
+needed.
+
 ## Contributions
 If you find a bug (or even a typo), please open an issue. You are free to
 improve the site via pull requests.
