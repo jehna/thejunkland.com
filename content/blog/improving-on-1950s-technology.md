@@ -1,7 +1,6 @@
 ---
 title: Improving on a 1950's technology&#58 VerbalExpressions
-modified: 1451313195606
-draft: true
+modified: 1451495770720
 ---
 
 Regular expressions can be used to search and match different complex parts of
