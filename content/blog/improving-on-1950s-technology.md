@@ -7,6 +7,9 @@ Regular expressions can be used to search and match different complex parts of
 text. But is there something we can do to improve the technology that's been
 around from the 1950's?
 
+This is the backstory of a small weekend project that grew into multiple
+thousand star trending repository.
+
 # Regular expressions are hard
 
 The language used to express the part of a text can get pretty hard to read
