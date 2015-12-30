@@ -8,7 +8,7 @@ Regular expressions can be used to search and match different complex parts of
 text. But is there something we can do to improve the technology that's been
 around from the 1950's?
 
-# Regular Expressions are hard
+# Regular expressions are hard
 
 The language used to express the part of a text can get pretty hard to read
 pretty fast, obfuscating the bigger view of what a person might have wanted to
@@ -57,7 +57,7 @@ regular expression nicely as you read it line by line.
 
 Using VerbalExpressions can help if you're trying to learn to use the "real"
 regular expressions, because the VerEx object is just an extension of the
-underlying `RegExp` object.
+underlying `RegExp` object (in JavaScript).
 
 You can do everything with the `VerEx` object you'd do with a regular `RegExp`
 object; you can find, test, replace etc.
@@ -80,7 +80,7 @@ couple of places in hope that it'd get some interest from developers struggling
 with learning regular expressions.
 
 Fortunately things worked out much better. With the help of
-[a fellow developer][juho-tweet], we got a big publicity after *the Smashing
+[Juho, a fellow developer][juho-tweet], we got a big publicity after *the Smashing
 magazine* tweeted about the library:
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Interesting: VerbalExpressions is a JS librarty that helps to construct hard regular expressions: <a href="https://t.co/hb55xgJAxp">https://t.co/hb55xgJAxp</a> (via <a href="https://twitter.com/luotojesse">@luotojesse</a>)</p>&mdash; Smashing Magazine (@smashingmag) <a href="https://twitter.com/smashingmag/status/359034140269625344">July 21, 2013</a></blockquote><script>window.loadTwitter = true;</script>
