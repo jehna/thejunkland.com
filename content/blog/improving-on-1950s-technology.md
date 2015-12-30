@@ -79,7 +79,7 @@ couple of places in hope that it'd get some interest from developers struggling
 with learning regular expressions.
 
 Fortunately things worked out much better. With the help of
-[Juho, a fellow developer][juho-tweet], we got a big publicity after *the Smashing
+[a fellow developer][juho-tweet], we got a big publicity after *the Smashing
 magazine* tweeted about the library:
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Interesting: VerbalExpressions is a JS librarty that helps to construct hard regular expressions: <a href="https://t.co/hb55xgJAxp">https://t.co/hb55xgJAxp</a> (via <a href="https://twitter.com/luotojesse">@luotojesse</a>)</p>&mdash; Smashing Magazine (@smashingmag) <a href="https://twitter.com/smashingmag/status/359034140269625344">July 21, 2013</a></blockquote><script>window.loadTwitter = true;</script>
