@@ -1,5 +1,5 @@
 ---
-title: Improving on a 1950's technology&#58 VerbalExpressions
+title: Improving 60 years old technology with a weekend project
 modified: 1451495770720
 ---
 
