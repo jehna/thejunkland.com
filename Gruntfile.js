@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         watch: {
             images: {
                 files: ['src/images/**/*'],
-                tasks: ['responsive_images']
+                tasks: ['responsive_images', 'copy:svg']
             },
             css: {
                 files: ['src/**/*.scss'],
@@ -182,6 +182,23 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        svgmin: {
+            options: {
+                plugins: [
+                    {
+                        removeViewBox: false
+                    },
+                    {
+                        //removeUselessStrokeAndFill: false
+                    }
+                ]
+            },
+            dist: {
+                files: [
+                    {expand: true, cwd: 'src/', src: ['images/**/*.svg'], dest: 'build/', filter: 'isFile'}
+                ]
+            }
+        },
         scp: {
             deploy: {
                 files: [{
@@ -209,6 +226,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-scp');
 
     grunt.registerTask('build', [
@@ -217,6 +235,7 @@ module.exports = function(grunt) {
         'cssmin', // Minify the CSS in /tmp
         'site', // Compile .md files to /build
         'copy', // Copy ready files to /build
+        'svgmin', // Copy and minify svg files
         'filerev', // Revision .js and .css files in /build
         'post-filerev', // Covert filerev result to replace config
         'replace:inlineCSS', // Inline the header CSS
@@ -231,6 +250,7 @@ module.exports = function(grunt) {
         'compass', // Compile styles to /tmp
         'site', // Compile .md files to /build
         'copy', // Copy ready files to /build
+        'svgmin', // Copy and minify svg files
         'replace:inlineCSS', // Inline the header CSS
         'responsive_images', // Resize images
     ]);
