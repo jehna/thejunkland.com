@@ -8,6 +8,7 @@
 
 <article>
     <%= content %>
+    <p><a href="https://twitter.com/intent/tweet?text=%22<%= escape(title) %>%22%20by%20@luotojesse%20<%= site.pkg.website %><%= doc.dest %>" class="twittershare" target="_blank">Tweet</a></p>
 </article>
     
 <%= partial('footer.html') %>

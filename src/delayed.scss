@@ -95,3 +95,40 @@ body.draft {
     margin-left: auto;
     margin-right: auto;
 }
+
+a.twittershare {
+    height: 28px;
+    padding: 6px 10px 6px 11px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    background: #1b95e0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    
+    &:before {
+        content: "";
+        background: url("/images/twitter.svg") 50% 50% no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: -1px;
+    }
+    
+    &:hover {
+        background-color: #0c7abf;
+    }
+    
+    &:visited,
+    &:active {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
