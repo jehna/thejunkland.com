@@ -1,5 +1,5 @@
 ---
-title: How to write good README and why you should care
+title: How to write good README and why should you care
 modified: 1462127618806
 ---
 
