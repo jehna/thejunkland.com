@@ -1,7 +1,6 @@
 ---
 title: How to write good README and why you should care
-modified: 1453655700681
-draft: true
+modified: 1462127618806
 ---
 
 Your project's README tells a lot about your project. How to make sure it's
