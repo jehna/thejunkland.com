@@ -7,6 +7,10 @@ draft: true
 Your project's README tells a lot about your project. How to make sure it's
 as good as your great project deserves?
 
+<a href="https://github.com/jvnk/game" rel="nofollow" target="_blank" x="_">
+![Does your awesome project's Github site look like this?](/images/readme-screenshot.png)
+</a>
+
 I've struggled with writing READMEs for my projects from the day I started
 to learn developing.
 
@@ -52,8 +56,8 @@ points that describe the main features of the project.
 
 What makes the project unique? What are the main features you're implementing?
 
-This helps to quickly compare your project with other projects and to give an
-idea that why the project exists in the first place.
+This helps to quickly compare other projects with yours and to give an idea that
+why the project exists in the first place.
 
 ## How to install the project?
 
@@ -120,7 +124,7 @@ ownership of the code: Can I use, modify and contribute to the project? Can I
 use the resulting code in my work/hobby projects?
 
 The best practice is to just answer to these questions by simply stating which
-license the project is licensed with. It saves the time for the contributors to
+license the project is licensed with. It saves the time of the contributors to
 search through your project and figure out if there's something that could
 backfire in the future.
 
