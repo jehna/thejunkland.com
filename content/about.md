@@ -21,8 +21,8 @@ Attribution-NonCommercial 2.5 License.
 # About the author <img src="/images/me.jpg" width="100" height="100" class="round">
 
 
-Jesse Luoto is the CTO of CreateTrips. During his [10+ years of programming][LinkedIn]
-he has worked with advertising agencies as with startups.
+Jesse Luoto is a senior developer at Reaktor. During his [10+ years of programming][LinkedIn]
+he has worked with advertising agencies as with startups and consulting.
 
 You can [follow Jesse on Twitter][Twitter] to discover great links to blog posts
 about marketing and technology.
