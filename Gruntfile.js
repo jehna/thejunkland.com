@@ -95,6 +95,10 @@ module.exports = function(grunt) {
             sitemap: {
                 src: 'build/sitemap.html',
                 dest: 'build/sitemap.xml'
+            },
+            favicon: {
+                src: 'src/favicon.ico',
+                dest: 'build/favicon.ico'
             }
         },
         filerev: {
