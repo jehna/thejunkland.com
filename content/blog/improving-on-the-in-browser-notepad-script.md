@@ -1,5 +1,5 @@
 ---
-title: Improving on the in-broswer Notepad script
+title: Improving on the in-browser Notepad script
 modified: 1465405123348
 draft: true
 ---
@@ -179,7 +179,7 @@ I always have my *Notepadlets* available when I change between devices.
 
 # But wait, there's more
 
-As with many free-time projects, I found myself coding like a mad man at 2AM,
+As with many free-time projects, I found myself coding like a madman at 2AM,
 figuring out the next awesome feature I could add to the project.
 
 This time it was the image upload.
@@ -202,7 +202,7 @@ Best of all, I open-sourced the code, so you can have
 The whole project is open-sourced and you can have a look at it at the
 [Notepadlet's Github repository][notepalet-github].
 
-If you have any improvements or suggestions, I'm always vey happy to hear them.
+If you have any improvements or suggestions, I'm always very happy to hear them.
 
 As a takeaway I'd like to end with these words:
 
