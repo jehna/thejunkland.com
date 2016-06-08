@@ -1,7 +1,6 @@
 ---
 title: Improving on the in-browser Notepad script
-modified: 1465405123348
-draft: true
+modified: 1465415731010
 ---
 
 The in-browser Notepad script is a handy tool to have a quick place to paste
