@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blog - Jesse Luoto
 showInMainMenu: true
 menuOrder: 0
 template: bloglist.html
