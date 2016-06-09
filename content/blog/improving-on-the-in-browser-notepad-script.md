@@ -1,5 +1,5 @@
 ---
-title: Improving on the in-browser Notepad script
+title: In-browser notepad
 modified: 1465415731010
 ---
 
