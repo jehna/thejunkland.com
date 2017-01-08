@@ -203,15 +203,6 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        scp: {
-            deploy: {
-                files: [{
-                    cwd: 'build/',
-                    src: '**/*',
-                    filter: 'isFile'
-                }]
-            }
-        },
         clean: {
             before: ['build/**/*'],
             after: ['tmp', 'build/sitemap.html']
@@ -231,7 +222,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('grunt-scp');
 
     grunt.registerTask('build', [
         'clean:before', // First clean old build dir
@@ -249,7 +239,7 @@ module.exports = function(grunt) {
         'imagemin', // Minify images
         'clean:after' // Cleanup /tmp
     ]);
-    
+
     grunt.registerTask('build-fast', [
         'compass', // Compile styles to /tmp
         'site', // Compile .md files to /build
@@ -259,38 +249,21 @@ module.exports = function(grunt) {
         'responsive_images', // Resize images
     ]);
     grunt.registerTask('default', ['browserSync', 'build-fast', 'watch']);
-    grunt.registerTask('deploy', ['build', 'pre-scp', 'scp']);
-    
+    grunt.registerTask('deploy', ['build']);
+
     grunt.registerTask('post-filerev', function() {
         var mapped = [];
         for(var oldFilename in grunt.filerev.summary) {
             var newFilename = grunt.filerev.summary[oldFilename];
-            
+
             oldFilename = oldFilename.replace(/^build\//, '');
             newFilename = newFilename.replace(/^build\//, '');
-            
+
             mapped.push({
                 from: oldFilename,
                 to: newFilename
             });
         }
         grunt.config('replace.filerev.replacements', mapped);
-    });
-    
-    grunt.registerTask('pre-scp', function() {
-        
-        var options = {};
-        
-        var scp = grunt.config('pkg.scp');
-        scp = scp.split('@');
-        options.username = scp[0];
-        scp = scp[1];
-        scp = scp.split(':');
-        options.host = scp[0];
-        var path = scp[1];
-        
-        grunt.config('scp.deploy.files.0.dest', path);
-        
-        grunt.config('scp.options', options);
     });
 };
