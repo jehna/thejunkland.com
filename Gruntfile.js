@@ -206,6 +206,12 @@ module.exports = function(grunt) {
         clean: {
             before: ['build/**/*'],
             after: ['tmp', 'build/sitemap.html']
+        },
+        'gh-pages': {
+            options: {
+                base: 'build'
+            },
+            src: ['**']
         }
     });
 
@@ -222,6 +228,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.registerTask('build', [
         'clean:before', // First clean old build dir
@@ -249,7 +256,7 @@ module.exports = function(grunt) {
         'responsive_images', // Resize images
     ]);
     grunt.registerTask('default', ['browserSync', 'build-fast', 'watch']);
-    grunt.registerTask('deploy', ['build']);
+    grunt.registerTask('deploy', ['build', 'gh-pages']);
 
     grunt.registerTask('post-filerev', function() {
         var mapped = [];

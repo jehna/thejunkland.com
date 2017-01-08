@@ -21,6 +21,7 @@
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-filerev": "^2.3.1",
+    "grunt-gh-pages": "^2.0.0",
     "grunt-markdown-site": "^3.0.0",
     "grunt-responsive-images": "^0.1.7",
     "grunt-scp": "^0.1.8",
