@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://thejunkland.com/</loc>
+        
+        <lastmod>2016-06-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+        <url>
+            <loc>https://thejunkland.com/about.html</loc>
+            <lastmod>2015-12-04</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/fixing-last-point-on-google-pagespeed-insights.html</loc>
+            <lastmod>2015-12-28</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/how-to-write-good-readme.html</loc>
+            <lastmod>2016-05-01</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/howtoget.html</loc>
+            <lastmod>2015-12-04</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/improving-on-1950s-technology.html</loc>
+            <lastmod>2015-12-30</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/improving-on-the-in-browser-notepad-script.html</loc>
+            <lastmod>2016-06-08</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/making-a-game-in-12-hours.html</loc>
+            <lastmod>2015-12-09</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+        <url>
+            <loc>https://thejunkland.com/blog/workflow-for-partial-git-commits.html</loc>
+            <lastmod>2015-12-08</lastmod>
+            <changefreq>never</changefreq>
+            <priority>0.5</priority>
+        </url>
+    
+</urlset>
