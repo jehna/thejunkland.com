@@ -8,9 +8,11 @@
 
 <article>
     <%= content %>
-    <h1>One more thing...</h1>
-    <p>Thank you for reading this blog post. The content on this blog will always be free, but I started an experiment a while ago to accept donations. So if you think the blog post was good, you can <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9MC2NW57X3FEN" target="_blank">buy me a cup of coffee</a>. Any thoughts? <a href="https://twitter.com/intent/tweet?text=@luotojesse" target="_blank">Ping me on twitter</a> and let me know!</p>
-    <p><a href="https://twitter.com/intent/tweet?text=%22<%= escape(title) %>%22%20by%20@luotojesse%20<%= site.pkg.website %><%= doc.dest %>" class="twittershare" target="_blank">Tweet</a></p>
+    <% if (doc.src.indexOf('blog') === 0) { %>
+      <h1>One more thing...</h1>
+      <p>Thank you for reading this blog post. The content on this blog will always be free, but I started an experiment a while ago to accept donations. So if you think the blog post was good, you can <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9MC2NW57X3FEN" target="_blank">buy me a cup of coffee</a>. Any thoughts? <a href="https://twitter.com/intent/tweet?text=@luotojesse" target="_blank">Ping me on twitter</a> and let me know!</p>
+      <p><a href="https://twitter.com/intent/tweet?text=%22<%= escape(title) %>%22%20by%20@luotojesse%20<%= site.pkg.website %><%= doc.dest %>" class="twittershare" target="_blank">Tweet</a></p>
+    <% } %>
 </article>
 
 <%= partial('footer.html') %>
