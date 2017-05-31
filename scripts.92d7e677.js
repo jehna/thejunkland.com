@@ -1,6 +1,6 @@
 var cb = function() {
     var l = document.createElement('link'); l.rel = 'stylesheet';
-    l.href = '/delayed.458fed76.css';
+    l.href = '/delayed.b59d7b7d.css';
     var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
     
     if (window.loadTwitter === true) {
