@@ -9,9 +9,15 @@
 <article>
     <%= content %>
     <% if (doc.src.indexOf('blog') === 0) { %>
-      <h1>One more thing...</h1>
-      <p>Thank you for reading this blog post. The content on this blog will always be free, but I started an experiment a while ago to accept donations. So if you think the blog post was good, you can <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9MC2NW57X3FEN" target="_blank">buy me a cup of coffee</a>. Any thoughts? <a href="https://twitter.com/intent/tweet?text=@luotojesse" target="_blank">Ping me on twitter</a> and let me know!</p>
       <p><a href="https://twitter.com/intent/tweet?text=%22<%= escape(title) %>%22%20by%20@luotojesse%20<%= site.pkg.website %><%= doc.dest %>" class="twittershare" target="_blank">Tweet</a></p>
+      <form action="https://script.google.com/macros/s/AKfycbxRbnrX_4N2LPp7P2DIYuVA9BqnZeJPKHZaNedhjakItb9Rxm83/exec" method="POST">
+        <h3>Be the first to know from new&nbsp;blog&nbsp;posts</h3>
+        <p>Subscrbe to the mailing list to get priority access to new blog posts!</p>
+        <div>
+          <input type="email" name="email" placeholder="Your email address" />
+        </div>
+        <button type="submit">Subscribe!</button>
+      </form>
     <% } %>
 </article>
 
