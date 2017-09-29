@@ -33,4 +33,4 @@ else window.addEventListener('load', cb);
 galite('create', 'UA-32702642-1', 'auto');
 galite('send', 'pageview');
 
-window.addEventListener('unload', function () { galite('timing', 'JS Dependencies', 'unload') })
+window.addEventListener('unload', function () { galite('send', 'timing', 'JS Dependencies', 'unload') })
