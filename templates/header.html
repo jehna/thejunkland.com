@@ -9,5 +9,6 @@
     <% if(doc.description) { %>
         <meta name="description" content="<%= doc.description %>" />
     <% } %>
+    <link rel="manifest" href="/manifest.webmanifest">
 </head>
 <body<% if(doc.draft === true) { %> class="draft"<% } %>>
