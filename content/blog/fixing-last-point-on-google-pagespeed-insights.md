@@ -1,6 +1,7 @@
 ---
 title: Fixing the last point on Google PageSpeed Insights
 modified: 1451305824890
+description: Blog post about an open source tool you can use to improve your site's speed and gain 100/100 points on Google PageSpeed Insights benchmark.
 ---
 
 If you've tried to build your site to 100/100 in the Google PageSpeed Insights,

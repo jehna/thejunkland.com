@@ -1,6 +1,7 @@
 ---
 title: In-browser notepad
 modified: 1465415731010
+description: Sometimes you need a quick, auto-saving, offline notepad. This blog post describes the author's journey of creating the best broser-based notepad — Notepadlet.
 ---
 
 The in-browser Notepad script is a handy tool to have a quick place to paste

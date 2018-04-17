@@ -1,6 +1,7 @@
 ---
 title: Improving 60 years old technology with a weekend project
 modified: 1451495770720
+description: Regular expressions can be hard to wrap your head aroud. This blog post introduces a tool that can help you to craft your own regular expressions using a more verbose syntax.
 ---
 
 Regular expressions can be used to search and match different complex parts of
