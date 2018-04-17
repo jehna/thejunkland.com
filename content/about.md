@@ -19,7 +19,7 @@ Site is also open source and [available on GitHub][site-github] with MIT
 license. Text content is licensed with Creative Commons
 Attribution-NonCommercial 2.5 License.
 
-# About the author <img src="/images/me.jpg" width="100" height="100" class="round">
+# About the author <img src="/images/me.jpg" width="100" height="100" class="round" role="presentation">
 
 
 Jesse Luoto is a senior developer at Reaktor. During his [10+ years of programming][LinkedIn]
