@@ -5,7 +5,8 @@
   "description": "thejunkland.com website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt"
   },
   "author": "Jesse Luoto",
   "license": "MIT",
@@ -14,7 +15,6 @@
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-compass": "^1.0.4",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-cssmin": "^0.14.0",
     "grunt-contrib-htmlmin": "^0.6.0",
@@ -24,6 +24,7 @@
     "grunt-gh-pages": "^2.0.0",
     "grunt-markdown-site": "^3.0.0",
     "grunt-responsive-images": "^0.1.7",
+    "grunt-sass": "^2.1.0",
     "grunt-scp": "^0.1.8",
     "grunt-svgmin": "^3.1.2",
     "grunt-text-replace": "^0.4.0",
