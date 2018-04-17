@@ -8,7 +8,7 @@ Your project's README tells a lot about your project. How to make sure it's
 as good as your great project deserves?
 
 <a href="https://github.com/jvnk/game" rel="nofollow noopener" target="_blank" x="_">
-![Does your awesome project's Github site look like this?](/images/readme-screenshot.png)
+<img alt="Does your awesome project's Github site look like this?" src="/images/readme-screenshot.png" data-dontoptimize />
 </a>
 
 I've struggled with writing READMEs for my projects from the day I started
