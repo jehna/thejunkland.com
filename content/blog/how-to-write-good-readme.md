@@ -7,7 +7,7 @@ description: This blog post goes through what makes a good README file for your 
 Your project's README tells a lot about your project. How to make sure it's
 as good as your great project deserves?
 
-<a href="https://github.com/jvnk/game" rel="nofollow" target="_blank" x="_">
+<a href="https://github.com/jvnk/game" rel="nofollow noopener" target="_blank" x="_">
 ![Does your awesome project's Github site look like this?](/images/readme-screenshot.png)
 </a>
 
