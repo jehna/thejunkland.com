@@ -9,7 +9,7 @@
 h1, h2, h3, h4, h5, h6, header {
     font-family: 'Oswald', sans-serif;
     padding-top: $fontSize * 2;
-    color: darken(#37474f, 20%);
+    color: darken($mainColor, 20%);
     line-height: 1.2em;
     text-align: center;
 }
@@ -77,9 +77,9 @@ header {
 
     small {
         display: block;
-        font-size: 0.5em;
+        font-size: 0.43em;
         font-family: 'Georgia', serif;
-        opacity: 0.8;
+        text-shadow: 0 2px 0 rgba(0,0,0,0.2);
     }
 
     img {

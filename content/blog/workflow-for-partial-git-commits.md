@@ -1,6 +1,7 @@
 ---
 title: Workflow for partial Git commits
 modified: 1449528542165
+description: Learning git has a steep learning curve. This blog post introduces a workflow to git which helps you to split your commits with a nice, graphical interface. Also includes a nice alias to automate the workflow.
 ---
 
 Here's the scenario: You've coded for a whole day and not done a single `git

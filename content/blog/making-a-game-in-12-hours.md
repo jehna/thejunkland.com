@@ -1,6 +1,7 @@
 ---
 title: Making a game in 12 hours
 modified: 1449687800925
+description: Fast prototyping can be a great skill to manage. This blog post is about fast prototyping applied on a game project during 12 hours.
 ---
 
 Failing is a big part of design process. *Fast* failing. So **how fast** could I

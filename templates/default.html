@@ -6,19 +6,21 @@
     <% } %>
 </header>
 
-<article>
-    <%= content %>
-    <% if (doc.src.indexOf('blog') === 0) { %>
-      <p><a href="https://twitter.com/intent/tweet?text=%22<%= escape(title) %>%22%20by%20@luotojesse%20<%= site.pkg.website %><%= doc.dest %>" class="twittershare" target="_blank">Tweet</a></p>
-      <form action="https://script.google.com/macros/s/AKfycbxRbnrX_4N2LPp7P2DIYuVA9BqnZeJPKHZaNedhjakItb9Rxm83/exec" method="POST">
-        <h3>Be the first to know from new&nbsp;blog&nbsp;posts</h3>
-        <p>Subscrbe to the mailing list to get priority access to new blog posts!</p>
-        <div>
-          <input type="email" name="email" placeholder="Your email address" />
-        </div>
-        <button type="submit">Subscribe!</button>
-      </form>
-    <% } %>
-</article>
+<main>
+    <article>
+        <%= content %>
+        <% if (doc.src.indexOf('blog') === 0) { %>
+          <p><a href="https://twitter.com/intent/tweet?text=%22<%= escape(title) %>%22%20by%20@luotojesse%20<%= site.pkg.website %><%= doc.dest %>" class="twittershare" target="_blank">Tweet</a></p>
+          <form action="https://script.google.com/macros/s/AKfycbxRbnrX_4N2LPp7P2DIYuVA9BqnZeJPKHZaNedhjakItb9Rxm83/exec" method="POST">
+            <h3>Be the first to know from new&nbsp;blog&nbsp;posts</h3>
+            <p>Subscrbe to the mailing list to get priority access to new blog posts!</p>
+            <div>
+              <input type="email" name="email" placeholder="Your email address" />
+            </div>
+            <button type="submit">Subscribe!</button>
+          </form>
+        <% } %>
+    </article>
+</main>
 
 <%= partial('footer.html') %>

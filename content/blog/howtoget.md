@@ -1,6 +1,7 @@
 ---
 title: How to get 100/100 in Google PageSpeed Insights
 modified: 1449180000000
+description: A blog post about how this site got 100/100 points in Google PageSpeed Insights benchmark.
 ---
 
 You know your website should be fast. But *how* fast should it be? You know,
@@ -18,7 +19,7 @@ takes. And here's my journey.
 
 # A very different mindset
 
-As I mentioned before, designers might not be aware of the performance 
+As I mentioned before, designers might not be aware of the performance
 consequences of their work. Therefore it might be impossible for the developer to
 salvage the outcome when the front page's images alone take 20MiB to download.
 

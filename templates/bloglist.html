@@ -5,18 +5,20 @@
     <small>A blog and porfolio of Jesse Luoto</small>
 </header>
 
-<article>
-    <%= content %>
-</article>
+<main>
+    <article>
+        <%= content %>
+    </article>
 
-<section>
-    <nav>
-        <ul>
-            <% _.each(_.filter(docs, function(d) { return d.src.indexOf('blog') === 0 && d.draft !== true }).sort(function(a,b) { return a.modified == b.modified ? 0 : (a.modified > b.modified ? -1 : 1)}), function (_doc) { %>
-                <li><a href="/<%= _doc.dest %>"><%= _doc.title %></a></li>
-            <% }); %>
-        </ul>
-    </nav>
-</section>
+    <section>
+        <nav>
+            <ul>
+                <% _.each(_.filter(docs, function(d) { return d.src.indexOf('blog') === 0 && d.draft !== true }).sort(function(a,b) { return a.modified == b.modified ? 0 : (a.modified > b.modified ? -1 : 1)}), function (_doc) { %>
+                    <li><a href="/<%= _doc.dest %>"><%= _doc.title %></a></li>
+                <% }); %>
+            </ul>
+        </nav>
+    </section>
+</main>
 
 <%= partial('footer.html') %>

@@ -1,6 +1,7 @@
 ---
 title: How to write good README and why should you care
 modified: 1462127618806
+description: This blog post goes through what makes a good README file for your project and the motivations behind it. It also includes a tool to bootstrap your own README quickly.
 ---
 
 Your project's README tells a lot about your project. How to make sure it's
@@ -144,7 +145,7 @@ craft myself a template README.md file that I could easily copy-paste to my
 projects.
 
 Over time the template has matured and it's become a regular part of my
-development process. You can find the [whole project on Github][readme-github], 
+development process. You can find the [whole project on Github][readme-github],
 or just add the template  to your project by running a simple shell command in
 your project folder:
 

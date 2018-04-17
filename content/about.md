@@ -3,6 +3,7 @@ title: About
 showInMainMenu: true
 menuOrder: 10
 modified: 1449180000000
+description: Jesse Luoto is a senior developer at Reaktor. During his 10+ years of programming he has worked with advertising agencies as with startups and consulting.
 ---
 
 This website serves as the blog and somewhat portfolio of Jesse Luoto. The blog
