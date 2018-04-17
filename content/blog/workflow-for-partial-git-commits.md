@@ -13,10 +13,12 @@ logical commits?
 If you've ever done a commit with XCode, you know that one thing the Apple's
 developers got right: The Version Editor.
 
+<noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/xcode-version-editor-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="Xcode version editor" src="/images/xcode-version-editor.png">
 </picture>
+</noscript>
 
 Version Editor lets you go through your changes you've done after your latest
 commit. Before you write your commit message, you can briefly go through every
@@ -87,17 +89,21 @@ Note that you actually have to select all the changes you want to commit *back*
 to your stage. If you're using OpenDiff, it means the arrow should point left to
 add that change to your commit.
 
+<noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/opendiff-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="OpenDiff arrow should point left to include it in the commit" src="/images/opendiff.png" width="645">
 </picture>
+</noscript>
 
 When you're done with the file, hit `cmd` + `Q` to exit OpenDiff. When the
 program prompts you whether to save the file, make sure to overwrite the current
 file.
 
 
+<noscript class="lazyloadimage">
 <img alt="Say yes to OpenDiff" src="/images/opendiff-confirm.png" width="451">
+</noscript>
 
 ## 4. Perform the commit
 

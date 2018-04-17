@@ -2,7 +2,7 @@ var cb = function() {
     var l = document.createElement('link'); l.rel = 'stylesheet';
     l.href = '/delayed.css';
     var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-    
+
     if (window.loadTwitter === true) {
         function loadTwit() {
             var s = document.createElement('script');
@@ -19,7 +19,22 @@ var cb = function() {
         window.addEventListener('scroll', bindScroll);
         bindScroll();
     }
+
+    window.addEventListener('scroll', loadImages)
 };
+
+function loadImages() {
+    window.removeEventListener('scroll', loadImages)
+    var lli = Array.prototype.slice.call(document.getElementsByClassName('lazyloadimage'))
+    var llr
+    for(var i = 0; i < lli.length; i++) {
+        llr = document.createElement("div")
+        llr.innerHTML = lli[i].textContent;
+        lli[i].parentElement.insertBefore(llr, lli[i])
+        lli[i].parentElement.removeChild(lli[i])
+    }
+}
+
 var raf = requestAnimationFrame || mozRequestAnimationFrame ||
     webkitRequestAnimationFrame || msRequestAnimationFrame;
 if (raf) raf(cb);

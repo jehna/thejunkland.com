@@ -28,7 +28,9 @@ has the HTML5 `contenteditable` attribute specified.
 This allows the user to edit the content of the page, which is indicated by the
 blinking cursor. You can start typing right away:
 
+<noscript class="lazyloadimage">
 <img alt="Empty notepad" src="/images/hello-world-notepad.png" width="396" height="73">
+</noscript>
 
 # Bringing some styles to equation
 
@@ -127,10 +129,12 @@ Now that the page got saved in the browser's history, I needed an intuitive way
 to search for the past documents. And this view wasn't actually helping:
 
 <p>
+<noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/history-tab-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="So many similar histories" src="/images/history-tab.png" width="702" height="125">
 </picture>
+</noscript>
 </p>
 
 To make history searching more convenient, I figured adding a proper `<title>`
@@ -151,10 +155,12 @@ finally had a name!
 
 
 <p>
+<noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/history-with-names-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="Now they have names!" src="/images/history-with-names.png" width="702" height="125">
 </picture>
+</noscript>
 </p>
 
 # A fresh UI
@@ -168,10 +174,12 @@ ready components with my design. That led me to use the awesome
 than I had hoped:
 
 <p>
+<noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/notepadlet-with-css-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="Now they have names!" src="/images/notepadlet-with-css.png" width="702" height="125">
 </picture>
+</noscript>
 </p>
 
 I also added styles for mobile devices, so with Chrome's instant history sync,

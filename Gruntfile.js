@@ -1,3 +1,7 @@
+const marked = require('marked')
+const renderer = new marked.Renderer()
+renderer.image = (href, title, text) => `<noscript class="lazyloadimage"><img src="${href}" alt="${text}"></noscript>`
+
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
@@ -40,6 +44,7 @@ module.exports = function(grunt) {
           },
           extend: {},
           marked: {
+            renderer,
             gfm: true,
             highlight: function(code, lang) {
               if (lang == "" || lang == "nohighlight") {
