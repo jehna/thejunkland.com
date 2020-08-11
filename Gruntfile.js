@@ -58,8 +58,10 @@ module.exports = function(grunt) {
                   })
                   .join("\n");
               }
-              return require("highlight.js").highlightAuto(code).value;
-            }
+              return lang
+                ? require("highlight.js").highlight(lang, code).value
+                : require("highlight.js").highlightAuto(code).value;
+            },
           },
           templates: "templates",
           defaultTemplate: "default.html"

@@ -18,7 +18,8 @@ pretty fast, obfuscating the bigger view of what a person might have wanted to
 accomplish.
 
 Consider this, rather simple, regular expression:
-```regex
+
+```
 /^\S+@\S+\.\S+$/
 ```
 
