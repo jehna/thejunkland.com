@@ -239,7 +239,7 @@ I very much believe that the Internet should be free (as in "free speech", not
 as in "free beer"), and server-side rendering of the main content keeps the
 content easily accessible for everyone.
 
-## What if you don't need a dynamic site?
+## 2. What if you don't need a dynamic site?
 
 Some sites (like this blog) don't change content, perform calculations or A/B
 tests, nor load 100s of kilobytes worth of code just to display a static HTML
@@ -253,6 +253,8 @@ Some CMS providers like Contentful and Netlify have seen this opportunity and
 provide tools to pre-build the website once the content changes. This creates
 lightning-fast static websites that are a competitive asset in a world where
 every fraction of a second saved means more sales.
+
+
 
 # What's next?
 
