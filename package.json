@@ -5,6 +5,7 @@
   "description": "thejunkland.com website",
   "main": "index.html",
   "scripts": {
+    "start": "serve -s build -l 3000",
     "build": "ts-node build.ts"
   },
   "author": "Jesse Luoto",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/jehna/thejunkland.com#readme",
   "devDependencies": {
+    "serve": "^14.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   },
