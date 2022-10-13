@@ -8,6 +8,7 @@ const build = async () => {
   const content = renderToStaticMarkup(Index())
 
   await fs.writeFile('build/index.html', `<!DOCTYPE html>${content}`)
-  await fs.writeFile('build/robots.txt', 'User-agent: *\nallow: /')
+
+  await fs.cp('public', 'build', { recursive: true })
 }
 build()
