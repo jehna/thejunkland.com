@@ -3,7 +3,12 @@
     "es6": true,
     "node": true
   },
-  "extends": ["standard", "plugin:jsx-a11y/strict"],
+  "extends": [
+    "standard",
+    "plugin:jsx-a11y/strict",
+    "plugin:@typescript-eslint/strict"
+  ],
+  "parser": "@typescript-eslint/parser",
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -15,8 +20,17 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "jsx-a11y"],
+  "plugins": ["react", "prettier", "jsx-a11y", "@typescript-eslint"],
   "rules": {
     "prettier/prettier": "error"
-  }
+  },
+  "root": true,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ]
 }

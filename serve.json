@@ -5,7 +5,11 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; object-src 'none'"
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.googleapis.com fonts.gstatic.com; connect-src www.google-analytics.com;"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000"
         }
       ]
     }
