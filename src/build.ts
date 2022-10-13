@@ -1,9 +1,9 @@
-import fs from "fs/promises";
+import fs from 'fs/promises'
 
 const build = async () => {
-  await fs.mkdir("build", { recursive: true });
+  await fs.mkdir('build', { recursive: true })
   await fs.writeFile(
-    "build/index.html",
+    'build/index.html',
     `<!DOCTYPE html>
   <html lang="en">
     <head>
@@ -16,7 +16,7 @@ const build = async () => {
       <p>Hello world!</p>
     </body>
   </html>`
-  );
-  await fs.writeFile("build/robots.txt", `User-agent: *\nallow: /`);
-};
-build();
+  )
+  await fs.writeFile('build/robots.txt', 'User-agent: *\nallow: /')
+}
+build()
