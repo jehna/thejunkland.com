@@ -3,11 +3,13 @@ import { loadFront } from 'yaml-front-matter'
 import fs from 'fs'
 import { Page } from './templates/current-page-context'
 import { marked } from 'marked'
+import sizeOf from 'image-size'
 
 const renderer = new marked.Renderer()
-renderer.image = (href, title, text) =>
-  `<noscript class="lazyloadimage"><img src="${href}" alt="${text}"></noscript>`
-
+renderer.image = (href, title, text) => {
+  const { width, height } = loadImageSize('public' + href)
+  return `<noscript class="lazyloadimage"><img src="${href}" alt="${text}" width="${width}" height="${height}"></noscript>`
+}
 export const readPages = (): Page[] => {
   const contentFiles = readdir('content')
 
@@ -31,4 +33,9 @@ export const readPages = (): Page[] => {
       hidden: page.hidden ?? false
     }
   })
+}
+
+const loadImageSize = (path: string) => {
+  const size = sizeOf(path)
+  return { width: size.width, height: size.height }
 }

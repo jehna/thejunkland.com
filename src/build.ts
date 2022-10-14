@@ -21,7 +21,9 @@ const build = async () => {
   }
   for (const page of pages) {
     const template = templates[page.template]
-    if (!template) continue // TODO: error
+    if (!template) {
+      throw new Error(`Template ${page.template} not found`)
+    }
     const content = renderToStaticMarkup(
       React.createElement(Render, { website, currentPage: page, template })
     )

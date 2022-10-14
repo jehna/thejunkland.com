@@ -16,7 +16,7 @@ developers got right: The Version Editor.
 <noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/xcode-version-editor-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
-<img alt="Xcode version editor" src="/images/xcode-version-editor.png">
+<img alt="Xcode version editor" src="/images/xcode-version-editor.png" width="1600" height="1120">
 </picture>
 </noscript>
 
@@ -92,7 +92,7 @@ add that change to your commit.
 <noscript class="lazyloadimage">
 <picture>
 <source srcset="/images/opendiff-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
-<img alt="OpenDiff arrow should point left to include it in the commit" src="/images/opendiff.png" width="645">
+<img alt="OpenDiff arrow should point left to include it in the commit" src="/images/opendiff.png" width="645" height="629">
 </picture>
 </noscript>
 
@@ -102,7 +102,7 @@ file.
 
 
 <noscript class="lazyloadimage">
-<img alt="Say yes to OpenDiff" src="/images/opendiff-confirm.png" width="451">
+<img alt="Say yes to OpenDiff" src="/images/opendiff-confirm.png" width="451" height="126">
 </noscript>
 
 ## 4. Perform the commit
