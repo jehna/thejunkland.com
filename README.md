@@ -18,7 +18,15 @@ yarn build
 yarn start
 ```
 
-Note: No watch mode yet, build by hand when necessary
+You can run the watch mode for development:
+
+```
+yarn watch
+```
+
+This watches all files in the project directory for changes and reuilds the site
+when something changes. Note that watch mode does not run image minifications,
+so Lighthouse tests may fail.
 
 ### Setup
 To use the project as your own website, you might want to change the following

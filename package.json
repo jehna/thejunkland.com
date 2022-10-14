@@ -6,6 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "serve -s build -l 3000 --config ../serve.json",
+    "watch": "nodemon --ext js,ts,jsx,tsx,md,jpg,png,svg,ico,txt,webmanifest,woff --exec 'yarn build:code' --watch src public content",
     "build": "yarn build:code && yarn build:imagemin",
     "build:code": "ts-node src/build.ts",
     "build:imagemin": "imagemin 'public/images/*' --out-dir=build/images",
@@ -46,6 +47,7 @@
     "image-size": "^1.0.2",
     "imagemin-cli": "^7.0.0",
     "marked": "^4.1.1",
+    "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
