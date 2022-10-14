@@ -1,7 +1,7 @@
 ---
 title: Thank you for subscribing!
 hidden: true
-template: thankyou.html
+template: thankyou
 ---
 
 # Thank you for subscribing
