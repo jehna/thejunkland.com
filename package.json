@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "serve -s build -l 3000 --config ../serve.json",
-    "watch": "nodemon --ext js,ts,jsx,tsx,md,jpg,png,svg,ico,txt,webmanifest,woff --exec 'yarn build:code' --watch src public content",
+    "watch": "nodemon --ext js,ts,jsx,tsx,md,jpg,png,svg,ico,txt,webmanifest,woff --exec 'yarn build:code' --watch src/**/* --watch public/**/* --watch content/**/*",
     "build": "yarn build:code && yarn build:imagemin",
     "build:code": "ts-node src/build.ts",
     "build:imagemin": "imagemin 'public/images/*' --out-dir=build/images",
@@ -55,7 +55,11 @@
     "serve": "^14.0.1",
     "sitemap": "^7.1.1",
     "ts-node": "^10.9.1",
+    "twitter-api-sdk": "^1.2.0",
     "typescript": "^4.8.4",
     "yaml-front-matter": "^4.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }

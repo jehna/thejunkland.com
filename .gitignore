@@ -5,3 +5,4 @@ tmp/
 .grunt/
 *.log
 .lighthouseci
+.env
