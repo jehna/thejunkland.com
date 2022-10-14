@@ -43,6 +43,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-standard": "^5.0.0",
     "ga-lite": "^2.1.6",
+    "highlight.js": "^11.6.0",
     "image-size": "^1.0.2",
     "imagemin-cli": "^7.0.0",
     "marked": "^4.1.1",
