@@ -131,7 +131,6 @@ to search for the past documents. And this view wasn't actually helping:
 <p>
 <noscript class="lazyloadimage">
 <picture>
-<source srcset="/images/history-tab-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="So many similar histories" src="/images/history-tab.png" width="702" height="125">
 </picture>
 </noscript>
@@ -157,7 +156,6 @@ finally had a name!
 <p>
 <noscript class="lazyloadimage">
 <picture>
-<source srcset="/images/history-with-names-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="Now they have names!" src="/images/history-with-names.png" width="702" height="125">
 </picture>
 </noscript>
@@ -176,7 +174,6 @@ than I had hoped:
 <p>
 <noscript class="lazyloadimage">
 <picture>
-<source srcset="/images/notepadlet-with-css-x2.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 702px)">
 <img alt="Now they have names!" src="/images/notepadlet-with-css.png" width="702" height="125">
 </picture>
 </noscript>
