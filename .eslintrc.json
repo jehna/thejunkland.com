@@ -3,11 +3,7 @@
     "es6": true,
     "node": true
   },
-  "extends": [
-    "standard",
-    "plugin:jsx-a11y/strict",
-    "plugin:@typescript-eslint/strict"
-  ],
+  "extends": ["plugin:jsx-a11y/strict", "plugin:@typescript-eslint/strict"],
   "parser": "@typescript-eslint/parser",
   "globals": {
     "Atomics": "readonly",
