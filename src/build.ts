@@ -5,6 +5,7 @@ import { renderToStaticMarkup } from 'react-dom/server'
 import { compileStyles } from './compile-styles'
 import { readPages } from './read-pages'
 import { Render } from './render'
+import { createSitemap } from './sitemap'
 import { templates } from './templates/templates'
 import { Website } from './templates/website-context'
 
@@ -35,5 +36,6 @@ const build = async () => {
     'build/ga-lite.min.js'
   )
   await fs.writeFile('build/delayed.css', styles.delayed)
+  await fs.writeFile('build/sitemap.xml', await createSitemap(pages, website))
 }
 build()

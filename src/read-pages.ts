@@ -27,7 +27,8 @@ export const readPages = (): Page[] => {
       title: page.title,
       description: page.description,
       template: page.template ?? 'default',
-      modified: page.modified
+      modified: page.modified,
+      hidden: page.hidden ?? false
     }
   })
 }

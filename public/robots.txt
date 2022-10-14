@@ -1,2 +1,8 @@
+#    Beep Boop 🤖
+#      /
+#  [┐∵]┘
+#
+
 User-agent: *
 allow: /
+Sitemap: https://thejunkland.com/sitemap.xml

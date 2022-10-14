@@ -13,6 +13,7 @@ export interface Page {
   description?: string
   template: keyof typeof templates
   modified: number
+  hidden: boolean
 }
 
 export const CurrentPageContext = createContext<Page>(null as never)
