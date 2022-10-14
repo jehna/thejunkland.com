@@ -41,7 +41,7 @@ export const PageWrapper: React.FC<Props> = ({ children }) => {
             {menuPages.map((page) => (
               <Fragment key={page.src}>
                 <a
-                  href={page.src}
+                  href={page.path}
                   className={
                     currentPage.src === page.src ? 'active' : undefined
                   }

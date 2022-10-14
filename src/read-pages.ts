@@ -19,6 +19,7 @@ export const readPages = (): Page[] => {
     const { markdown, ...page } = loadFront(raw, {
       contentKeyName: 'markdown'
     })
+    const src = file.replace(/\.md$/, '.html')
     return {
       content: marked(markdown, {
         gfm: true,
@@ -30,7 +31,8 @@ export const readPages = (): Page[] => {
       menuOrder: page.menuOrder ?? 0,
       menuTitle: page.menuTitle,
       showInMainMenu: page.showInMainMenu ?? false,
-      src: file.replace(/\.md$/, '.html'),
+      src,
+      path: '/' + src.replace('index.html', ''),
       title: page.title,
       description: page.description,
       template: page.template ?? 'default',

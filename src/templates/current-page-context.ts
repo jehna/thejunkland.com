@@ -5,6 +5,7 @@ export interface Page {
   showInMainMenu: boolean
   menuOrder: number
   src: string
+  path: string
   title: string
   menuTitle?: string
   isBlogPost: boolean

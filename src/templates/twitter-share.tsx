@@ -5,7 +5,7 @@ import { WebsiteContext } from './website-context'
 export const TwitterShare = () => {
   const page = useContext(CurrentPageContext)
   const website = useContext(WebsiteContext)
-  const fullUrl = `${website.domain}${page.src}`
+  const fullUrl = `${website.domain}${page.path}`
   const tweet = `"${page.title}" by @luotojesse ${fullUrl}`
   const tweetUrl =
     'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet)
