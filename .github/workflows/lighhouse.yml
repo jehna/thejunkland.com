@@ -1,0 +1,19 @@
+name: Lighthouse tests
+on: pull_request
+jobs:
+  lighthouse:
+    name: Lighthouse performance test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: npm install, build
+        run: |
+          yarn install
+          yarn build
+      - name: run Lighthouse CI
+        run: |
+          yarn lighthouse:ci

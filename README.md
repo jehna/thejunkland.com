@@ -1,64 +1,50 @@
 # thejunkland.com
 > A personal blog and portfolio of Jesse Luoto
 
-This site is built on top of Grunt.
+A blog since 2010!
 
 ## Getting Started
-Install the project by running:
+
+Install the project's dependencies by running:
 
 ```
-npm install
+yarn
 ```
 
-This plugin requires Grunt `~0.4.5`
+And then build & run the development server:
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins.
-Once you're familiar with that process, you may compile this project using:
-
-```bash
-grunt
+```
+yarn build
+yarn start
 ```
 
-This compiles the project to `build/` folder and starts a local web server that
-autoreloads files as you change them.
+Note: No watch mode yet, build by hand when necessary
 
 ### Setup
 To use the project as your own website, you might want to change the following
 parameters from `package.json` file.
 
 #### website
-Type: `String`  
+Type: `String`
 Template: `<%= site.pkg.website %>`
 
 Defines the base URL for your website. Used, where the full, absolute URL is
 needed.
 
 
-#### scp
-Type: `String`  
-Format: `username@domain:path`
-
-The SCP configuration for the `grunt deploy` task. All the built files will be
-copied to the destination path on the server.
-
 ### Deploying
-You can deploy the project straight to your web server (using SCP) by entering
-the following command:
 
-```
-grunt deploy
-```
-
-Note that after the clean build, this command will prompt for the SCP password
-for the user defined in the `package.json` file.
+This site is automatically deployed using [Netlify](https://www.netlify.com/).
 
 ## Contributions
+
 If you find a bug (or even a typo), please open an issue. You are free to
 improve the site via pull requests.
 
 You also may use an issue or a pull request to request a quest blogging.
 
 ## Licensing
+
 The code in this project is licensed under MIT license (see LICENSE-MIT file).
 
 The content (texts in `content/*.md` files, images) is licensed under a

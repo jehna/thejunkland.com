@@ -2,7 +2,7 @@
 title: Blog - Jesse Luoto
 showInMainMenu: Blog
 menuOrder: 0
-template: bloglist.html
+template: bloglist
 description: Blog and showreel of Jesse Luoto's work. Includes stories about current and past projects games, SaaS prototypes, coding tools and websites.
 ---
 

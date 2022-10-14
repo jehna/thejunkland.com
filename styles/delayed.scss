@@ -1,6 +1,6 @@
 @import "variables.scss";
 @import "highlightjs-style.scss";
-@import url(https://fonts.googleapis.com/css?family=Oswald:300|Gentium+Basic);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300|Gentium+Basic&display=swap);
 
 h2 {
     opacity: 0.9;
@@ -102,7 +102,7 @@ a.twittershare {
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-    background: #1b95e0;
+    background: #0c7abf; // Official Twitter color is lighter (hover color), but swapped to make WCAG happy
     box-sizing: border-box;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 13px;
@@ -123,7 +123,7 @@ a.twittershare {
     }
 
     &:hover {
-        background-color: #0c7abf;
+        background-color: #1b95e0;
     }
 
     &:visited,

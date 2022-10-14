@@ -3,5 +3,5 @@ node_modules/
 build/
 tmp/
 .grunt/
-yarn.lock
 *.log
+.lighthouseci

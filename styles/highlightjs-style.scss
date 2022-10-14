@@ -67,4 +67,9 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 .hljs-type,
 .hljs-selector-id {
   font-weight: bold;
+
+  &.function_, &.class_ {
+    font-weight: normal;
+    color: #ddd;
+  }
 }
