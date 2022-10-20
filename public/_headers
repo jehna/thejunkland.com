@@ -1,3 +1,4 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.googleapis.com fonts.gstatic.com; connect-src www.google-analytics.com;
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; object-src 'none'; font-src 'self' fonts.googleapis.com fonts.gstatic.com; connect-src www.google-analytics.com; frame-ancestors 'none';
   Cache-Control: max-age=31536000
+  X-Content-Type-Options: nosniff
