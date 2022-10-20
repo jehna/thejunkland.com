@@ -1,0 +1,18 @@
+name: ZAP full scan on push to master
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: ZAP full scan
+    steps:
+      - name: Wait for a little while for Netlify to build
+        run: sleep 100 # Takes 30 seconds on average. TODO: Actually check the deployed version is live
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.4.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target: "https://thejunkland.com/"

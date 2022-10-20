@@ -1,13 +1,9 @@
-name: Zap full scan on push to master
-on:
-  push:
-    branches:
-      - master
-
+name: ZAP Baseline Scan
+on: pull_request
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
-    name: Zap full scan
+    name: Scan the webapplication
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
@@ -20,8 +16,10 @@ jobs:
           yarn build
           yarn start &
       - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.4.0
+        uses: zaproxy/action-baseline@v0.7.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          docker_name: "owasp/zap2docker-stable"
           target: "http://localhost:3000/"
+          allow_issue_writing: false
+          fail_action: true
+          rules_file_name: ".zap-rules.dev.tsv"

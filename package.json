@@ -5,7 +5,7 @@
   "description": "thejunkland.com website",
   "main": "index.html",
   "scripts": {
-    "start": "serve -s build -l 3000 --config ../serve.json",
+    "start": "serve build -l 3000 --config ../serve.json",
     "watch": "nodemon --ext js,ts,jsx,tsx,md,jpg,png,svg,ico,txt,webmanifest,woff --exec 'yarn build:code' --watch src/**/* --watch public/**/* --watch content/**/*",
     "build": "yarn build:code && yarn build:imagemin",
     "build:code": "ts-node src/build.ts",
