@@ -4,3 +4,5 @@
 10041	IGNORE	(The real website is https. I guess one could have certs on CI too, but 🤷)
 10055	IGNORE	(Not sure what causes this, the documentation is not specific. Needs more digging)
 10109	IGNORE	(False positive PWA)
+10049	IGNORE	(TODO)
+10063	IGNORE	(TODO)
