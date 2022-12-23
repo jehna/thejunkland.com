@@ -34,7 +34,7 @@
     "@types/yaml-front-matter": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
-    "eslint": "^8.29.0",
+    "eslint": "^8.30.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
