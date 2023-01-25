@@ -52,7 +52,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.57.1",
-    "serve": "^14.1.2",
+    "serve": "^14.2.0",
     "sitemap": "^7.1.1",
     "ts-node": "^10.9.1",
     "twitter-api-sdk": "^1.2.1",
