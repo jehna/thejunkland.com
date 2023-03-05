@@ -36,11 +36,16 @@ structure of the blog post.
 See for yourself! This blog post was created using the tool I created, with only
 minor finalizing edits (and the meme, obviously) to GPT-3's output.
 
-The original audio file can be found here:
+Listen to the original audio recording of the blog post:
 
-<audio controls src="/audio/blog-post-audio.m4a">
-  <a href="/audio/blog-post-audio.m4a" download>Download audio (6.4mb)</a>
-</audio>
+<p>
+  <audio controls src="/audio/blog-post-audio.m4a">
+    <a href="/audio/blog-post-audio.m4a" download>Download audio (6.4mb)</a>
+  </audio>
+</p>
+
+(Note the super bad quality – this was recorded with my Macbook's built-in mic
+while recovering from a cold)
 
 You can also try out the tool yourself by visiting the Github repository:
 
