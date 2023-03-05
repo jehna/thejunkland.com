@@ -19,7 +19,7 @@ transcribing and formatting spoken text into a blog post? Let's find out!
 
 The first step in this process is transcribing raw speech into a text format
 that the GPT-3 model can use. I'm using OpenAI's Whisper API to do this, but it
-is not without its challenges; when transcribing spoken words, some intonation
+is not without its challenges; when transcribing spoken words, some intention
 of the spoken words is lost. For example, when speaking, one may use filler
 words and mannerisms to emphasize their point but when transcribed, these
 nuances are lost.
