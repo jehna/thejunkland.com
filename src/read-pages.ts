@@ -37,7 +37,8 @@ export const readPages = (): Page[] => {
       description: page.description,
       template: page.template ?? 'default',
       modified: page.modified,
-      hidden: page.hidden ?? false
+      hidden: page.hidden ?? false,
+      socialMediaImage: page.socialMediaImage
     }
   })
 }

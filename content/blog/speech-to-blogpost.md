@@ -2,6 +2,7 @@
 title: Create Beautiful Blog Posts from Spoken Text with OpenAI's Whisper API
 modified: 1678044806157
 description: Today I created a tool that can take spoken text input and create a beautiful blog post out of it.
+socialMediaImage: /images/just_do_it.png
 ---
 
 Today I created a tool called

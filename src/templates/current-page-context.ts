@@ -15,6 +15,7 @@ export interface Page {
   template: keyof typeof templates
   modified: number
   hidden: boolean
+  socialMediaImage?: string
 }
 
 export const CurrentPageContext = createContext<Page>(null as never)

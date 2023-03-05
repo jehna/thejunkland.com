@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const PageWrapper: React.FC<Props> = ({ children }) => {
-  const { pages, inlineStyles } = useContext(WebsiteContext)
+  const { pages, inlineStyles, domain } = useContext(WebsiteContext)
   const currentPage = useContext(CurrentPageContext)
 
   const menuPages = pages
@@ -23,6 +23,12 @@ export const PageWrapper: React.FC<Props> = ({ children }) => {
         <title>{currentPage.title}</title>
         {currentPage.description && (
           <meta name="description" content="<%= doc.description %>" />
+        )}
+        {currentPage.socialMediaImage && (
+          <meta
+            property="og:image"
+            content={domain + currentPage.socialMediaImage}
+          />
         )}
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
