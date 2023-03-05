@@ -2,7 +2,7 @@
 title: Create Beautiful Blog Posts from Spoken Text with OpenAI's Whisper API
 modified: 1678044806157
 description: Today I created a tool that can take spoken text input and create a beautiful blog post out of it.
-socialMediaImage: /images/just_do_it.png
+socialMediaImage: /images/just-do-it.jpg
 ---
 
 Today I created a tool called
@@ -13,7 +13,7 @@ This tool uses OpenAI's Whisper API to transcribe the spoken words into text
 that can be fed to their GPT-3 model. Can GPT-3 handle the complexities of
 transcribing and formatting spoken text into a blog post? Let's find out!
 
-<p><img alt="Sometimes doing tools for yourself is more enjoyable than the task itself?" src="/images/just_do_it.png" data-dontoptimize width="900" height="600" /></p>
+<p><img alt="Sometimes doing tools for yourself is more enjoyable than the task itself?" src="/images/just-do-it.jpg" data-dontoptimize width="900" height="600" /></p>
 
 ## Transcribing Speech to Text
 
