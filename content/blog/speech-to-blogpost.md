@@ -14,14 +14,14 @@ transcribing and formatting spoken text into a blog post? Let's find out!
 
 <p><img alt="Sometimes doing tools for yourself is more enjoyable than the task itself?" src="/images/just_do_it.png" data-dontoptimize width="900" height="600" /></p>
 
-## Transcribing Spoken Text
+## Transcribing Speech to Text
 
-The first step in this process is transcribing spoken text into a text format
-that the GPT-3 model can use. OpenAI's Whisper API is used to do this, but it is
-not without its challenges; when transcribing spoken words, some intonation of
-the spoken words is lost. For example, when speaking, one may use filler words
-and mannerisms to emphasize their point but when transcribed, these nuances are
-lost.
+The first step in this process is transcribing raw speech into a text format
+that the GPT-3 model can use. I'm using OpenAI's Whisper API to do this, but it
+is not without its challenges; when transcribing spoken words, some intonation
+of the spoken words is lost. For example, when speaking, one may use filler
+words and mannerisms to emphasize their point but when transcribed, these
+nuances are lost.
 
 ## Formatting Text into Blog Posts
 
@@ -30,6 +30,11 @@ traditional text-to-speech applications are not designed to produce blog posts
 with correctly formatted paragraphs, ingress, and conclusions. As such, the
 GPT-3 model must be able to not only recognize the content but also the
 structure of the blog post.
+
+Fortunately this issue can be solved by using [good old prompt
+engineering][prompt-engineering].
+
+[prompt-engineering]:https://github.com/jehna/babble2blog/blob/f5fe182aa7b70c2492b214a799830e9e976b3a76/src/gpt3.ts#L21-L33
 
 ## Did it work?
 
