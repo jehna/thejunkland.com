@@ -12,7 +12,7 @@ This tool uses OpenAI's Whisper API to transcribe the spoken words into text
 that can be fed to their GPT-3 model. Can GPT-3 handle the complexities of
 transcribing and formatting spoken text into a blog post? Let's find out!
 
-![Sometimes doing tools for yourself is more enjoyable than the task itself](/images/just_do_it.png)
+<p><img alt="Sometimes doing tools for yourself is more enjoyable than the task itself?" src="/images/just_do_it.png" data-dontoptimize width="900" height="600" /></p>
 
 ## Transcribing Spoken Text
 
