@@ -1,6 +1,12 @@
 {
   "cleanUrls": false,
-  "redirects": [{ "source": "/_headers", "destination": "/headers" }],
+  "redirects": [
+    { "source": "/_headers", "destination": "/headers" },
+    {
+      "source": "/blog/text-to-blogpost.html",
+      "destination": "/blog/speech-to-blogpost.html"
+    }
+  ],
   "rewrites": [{ "source": "/", "destination": "/index.html" }],
   "directoryListing": false,
   "headers": [
