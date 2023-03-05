@@ -36,6 +36,12 @@ structure of the blog post.
 See for yourself! This blog post was created using the tool I created, with only
 minor finalizing edits (and the meme, obviously) to GPT-3's output.
 
+The original audio file can be found here:
+
+<audio controls src="/audio/blog-post-audio.m4a">
+  <a href="/audio/blog-post-audio.m4a" download>Download audio (6.4mb)</a>
+</audio>
+
 You can also try out the tool yourself by visiting the Github repository:
 
 https://github.com/jehna/babble2blog
