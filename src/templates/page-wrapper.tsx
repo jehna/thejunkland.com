@@ -22,7 +22,7 @@ export const PageWrapper: React.FC<Props> = ({ children }) => {
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>{currentPage.title}</title>
         {currentPage.description && (
-          <meta name="description" content="<%= doc.description %>" />
+          <meta name="description" content={currentPage.description} />
         )}
         {currentPage.socialMediaImage && (
           <meta
