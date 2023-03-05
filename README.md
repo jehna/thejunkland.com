@@ -34,7 +34,6 @@ parameters from `package.json` file.
 
 #### website
 Type: `String`
-Template: `<%= site.pkg.website %>`
 
 Defines the base URL for your website. Used, where the full, absolute URL is
 needed.
