@@ -9,7 +9,7 @@ description: Jesse Luoto is a senior developer at Reaktor. During his 10+ years 
 This website serves as the blog and somewhat portfolio of Jesse Luoto. The blog
 posts will be about *current and past projects* of Jesse.
 
-You can expect to find blog posts about **games**, **SaaS prototypes**,
+You can expect to find blog posts about **AI**, **games**,
 **coding tools** and **websites**.
 
 This website loads fast on any phone or computer and has an astonishing
