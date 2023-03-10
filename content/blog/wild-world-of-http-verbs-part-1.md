@@ -9,6 +9,9 @@ essential for penetration testers. One critical aspect of HTTP is its use of
 verbs, which dictate the way in which users interact with servers. In this blog
 post, we will explore the most commonly used HTTP verbs: GET and POST.
 
+Make sure to check out the [second part](./wild-world-of-http-verbs-part-2.html)
+too!
+
 ## Understanding the Basics
 
 HTTP stands for Hypertext Transfer Protocol and is a text-based protocol used
@@ -69,3 +72,5 @@ keeping an eye out for potential vulnerabilities associated with each verb,
 testers can identify and address security issues before they can be exploited.
 Stay tuned for our next blog post where we explore some of the less commonly
 used HTTP verbs!
+
+See also: [The Wild World of HTTP Verbs (Part 2)](./wild-world-of-http-verbs-part-2.html)
