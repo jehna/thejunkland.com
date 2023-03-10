@@ -13,22 +13,29 @@ post, we will explore the most commonly used HTTP verbs: GET and POST.
 
 HTTP stands for Hypertext Transfer Protocol and is a text-based protocol used
 for communication between web servers and clients. When making a request, you
-provide a URI (Uniform Resource Identifier) which includes the protocol (HTTP or
-HTTPS), domain name, path and query. The HTTP verb, or method, is used to
-specify the type of interaction you want to have with the server.
+provide a URI (Uniform Resource Identifier) which is translated to `Host` header
+(domain name) and the path part of the message. The HTTP verb, or method, is
+used to specify the type of interaction you want to have with the server.
 
+A minimal example of a GET request on protocol level:
+```
+GET /path HTTP/1.1
+Host: example.com
+
+
+```
 ### GET Requests
 
-The most commonly used HTTP verb is the GET request. GET requests should not
-have any side effects on the server and are designed for retrieving information.
-Because of the caching property of GET requests, they are often used for serving
-static resources, but developers need to be careful not to cache sensitive
-information that should only be accessible to authorized users.
+The most commonly used HTTP verb is GET. GET requests should not have any side
+effects on the server and are designed for retrieving information. Because of
+the caching property of GET requests, they are often used for serving static
+resources, so developers need to be careful not to cache sensitive information
+that should only be accessible to authorized users.
 
 ### POST Requests
 
-By contrast, POST requests are designed for submitting data to a server and can
-have side effects. POST requests often have a request body that contains
+By contrast, POST requests are designed for submitting data to a server and they
+usually have side effects. POST requests often have a request body that contains
 unsanitized user inputs, making them a prime target for penetration testing. Be
 sure to look out for vulnerabilities caused by unhandled user inputs or
 assumptions made by the server about the input being received.
