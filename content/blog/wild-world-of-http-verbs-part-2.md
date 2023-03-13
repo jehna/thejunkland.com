@@ -14,10 +14,11 @@ Also make sure to check out the [first part](./wild-world-of-http-verbs-part-1.h
 ## PUT vs POST: The ones you confuse
 
 Many developers stress over the difference between PUT and POST, as they are
-quite similar. The most important difference is idempotency. PUT is idempotent,
-which means you can repeat the request as many times as you want, but the side
+quite similar. The most important difference is idempotency. PUT is idempotent
+(in HTTP spec, note that API implementations may vary),
+which means you should be able to repeat the request as many times as you want, but the side
 effect is only done once. On the other hand, POST is not idempotent. This means
-that if you repeat the exact same POST request twice, it will perform the thing
+that if you repeat the exact same POST request twice, it does not have guarantees of idempotency and can perform the thing
 two times.
 
 ### PATCH the difference?
