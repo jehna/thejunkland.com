@@ -31,7 +31,8 @@ liking, you were out of luck.
 Enter modern streaming services - the game-changer for vocal learners like me.
 With the ability to change the narration speed, I found my sweet spot. Running
 the narration at double speed allowed me to comprehend and retain the
-information at a pace that worked for me.
+information at a pace that worked for me. Last year I read almost 100
+audiobooks, along with constant consumption of podcasts.
 
 This revelation made me realize that schools don't teach us about the different
 types of learners and how to find our unique learning styles. Whether it's
