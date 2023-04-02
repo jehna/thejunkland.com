@@ -40,7 +40,7 @@ securely connected when in reality, our data is being intercepted.
 
 Imagine you're staying at a hotel with free wifi. How do you know that the
 wifi isn't compromised and listening to all your traffic? What if the hotel is
-hosting their own [google.com](google.com) and using their own private and
+hosting their own [google.com](https://google.com) and using their own private and
 public keys to intercept your messages? Encryption alone isn't enough to solve
 this problem - we need a reliable way to establish trust.
 
