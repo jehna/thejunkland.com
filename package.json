@@ -28,7 +28,7 @@
   "devDependencies": {
     "@lhci/cli": "^0.11.1",
     "@types/marked": "^4.0.8",
-    "@types/node": "^18.15.12",
+    "@types/node": "^18.15.13",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@types/yaml-front-matter": "^4.1.0",
