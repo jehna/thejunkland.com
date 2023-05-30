@@ -60,6 +60,6 @@
     "yaml-front-matter": "^4.1.1"
   },
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.1.0"
   }
 }
