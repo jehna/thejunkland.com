@@ -27,7 +27,7 @@
   "homepage": "https://github.com/jehna/thejunkland.com#readme",
   "devDependencies": {
     "@lhci/cli": "^0.12.0",
-    "@types/marked": "^4.0.8",
+    "@types/marked": "^5.0.0",
     "@types/node": "^18.15.13",
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.0.11",
@@ -46,7 +46,7 @@
     "highlight.js": "^11.7.0",
     "image-size": "^1.0.2",
     "imagemin-cli": "^7.0.0",
-    "marked": "^4.3.0",
+    "marked": "^5.0.4",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.7",
     "react": "^18.2.0",
