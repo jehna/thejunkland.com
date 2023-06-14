@@ -46,6 +46,7 @@
     "highlight.js": "^11.8.0",
     "image-size": "^1.0.2",
     "imagemin-cli": "^7.0.0",
+    "jpegtran-bin": "^7.0.0",
     "marked": "^4.3.0",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
