@@ -96,7 +96,7 @@ An LLM might still answer "No, but ...", "I don't know" or the famous "I'm
 sorry, but as an AI language model I cannot...".
 
 This used to be a problem, but fortunately there are now ways to control the
-LLM's output like [guidance](guidance.readthedocs.io/) and
+LLM's output like [guidance](https://guidance.readthedocs.io/) and
 [outlines](https://github.com/normal-computing/outlines). These tools use
 different techniques to ensure that the LLM's output matches a desired format.
 
