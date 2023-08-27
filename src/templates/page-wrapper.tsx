@@ -31,6 +31,7 @@ export const PageWrapper: React.FC<Props> = ({ children }) => {
           />
         )}
         <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="canonical" href={domain + currentPage.path} />
       </head>
       <body className={currentPage.isDraft ? 'draft' : undefined}>
         {children}
