@@ -24,7 +24,6 @@ export const readPages = (): Page[] => {
       content: marked(markdown, {
         gfm: true,
         renderer,
-        highlight: highlightCustom
       }),
       isBlogPost: file.startsWith('blog/'),
       isDraft: page.isDraft ?? false,
