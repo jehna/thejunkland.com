@@ -13,7 +13,7 @@ const build = async () => {
   await fs.mkdir('build', { recursive: true })
 
   const styles = compileStyles()
-  const pages = readPages()
+  const pages = await readPages()
   const website: Website = {
     pages,
     domain: JSON.parse(await fs.readFile('package.json', 'utf8')).website,

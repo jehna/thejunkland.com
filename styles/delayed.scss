@@ -1,5 +1,5 @@
+@use "../node_modules/highlight.js/styles/default.css";
 @import "variables.scss";
-@import "highlightjs-style.scss";
 @import url(https://fonts.googleapis.com/css?family=Oswald:300|Gentium+Basic&display=swap);
 
 h2 {
@@ -18,17 +18,14 @@ code {
 }
 
 code, pre {
-    //background: #EEE;
+    color: white;
     font-size: 0.8em;
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
 
-pre code {
-    //padding: 0;
-    //border-radius: 0;
-    //background: trasparent;
-    font-size: 1em;
+pre {
+    padding: 0.7em 0.9em;
 }
 
 blockquote {
