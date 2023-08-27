@@ -2,7 +2,7 @@ name: ZAP full scan on push to master
 on:
   push:
     branches:
-      - master
+      - noop
 
 jobs:
   zap_scan:
