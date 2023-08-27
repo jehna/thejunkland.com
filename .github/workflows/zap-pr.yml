@@ -23,3 +23,4 @@ jobs:
           allow_issue_writing: false
           fail_action: true
           rules_file_name: ".zap-rules.dev.tsv"
+          cmd_options: "-config globalexcludeurl.url_list.url.regex='\\.m4a$'"
