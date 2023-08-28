@@ -37,6 +37,7 @@ const main = async () => {
   })
 
   const tweets = [firstTweet.data!]
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
   while (true) {
     const latest = tweets.at(-1)!
     const nextTweet = nextTweets.data?.find(

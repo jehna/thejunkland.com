@@ -39,7 +39,7 @@ renderer.codespan = (code) => `<code class="hljs">${code}</code>`
 export const parseWithMarkdown = async (markdown: string) => {
   const result = await marked.parse(markdown, {
     gfm: true,
-    renderer,
+    renderer
   })
-  return result || markdown
+  return result ? result : markdown
 }
