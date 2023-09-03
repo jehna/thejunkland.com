@@ -6,3 +6,4 @@ tmp/
 *.log
 .lighthouseci
 .env
+vale/styles
