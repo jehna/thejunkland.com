@@ -349,10 +349,10 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.12.tgz#920447fdd78d76b19de0438b7f60df3c4a80bf1c"
   integrity sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==
 
-"@types/yaml-front-matter@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@types/yaml-front-matter/-/yaml-front-matter-4.1.1.tgz#57c8c6202209d827e8c06e0d5aa2b22d91ae4d48"
-  integrity sha512-s0RJ0yqYBFnua/xZ+u27/IqAh7CBuaC1lOwwLv07nQ1nPMiPhNjgJZVyGFl3l3TIoKlEPpVkfOzp+U/rZYmH6A==
+"@types/yaml-front-matter@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@types/yaml-front-matter/-/yaml-front-matter-4.1.2.tgz#ca6757b01573c07577dd7cb2ec9f529d7208d5bc"
+  integrity sha512-BcPaZjz8I1i5WKBGlRnpOMx0TJUw3MXkcwOHkvC0XSp5h2Tbi/rUZaEz9mLEO0UtKZF/9NSS9BGm1qn0BkLOfw==
   dependencies:
     "@types/js-yaml" "*"
     "@types/node" "*"
