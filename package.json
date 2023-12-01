@@ -48,7 +48,7 @@
     "imagemin-cli": "^7.0.0",
     "jpegtran-bin": "^7.0.0",
     "marked": "^11.0.0",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.0.2",
     "prettier": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
