@@ -49,7 +49,7 @@
     "jpegtran-bin": "^7.0.0",
     "marked": "^11.1.1",
     "nodemon": "^3.0.2",
-    "prettier": "^3.1.1",
+    "prettier": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.7",
