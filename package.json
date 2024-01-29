@@ -47,7 +47,7 @@
     "image-size": "^1.1.1",
     "imagemin-cli": "^7.0.0",
     "jpegtran-bin": "^7.0.0",
-    "marked": "^11.1.1",
+    "marked": "^11.2.0",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.4",
     "react": "^18.2.0",
