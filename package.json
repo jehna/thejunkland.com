@@ -62,6 +62,6 @@
   },
   "dependencies": {
     "dotenv": "^16.4.1",
-    "marked-highlight": "^2.1.0"
+    "marked-highlight": "^2.1.1"
   }
 }
