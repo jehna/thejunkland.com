@@ -43,7 +43,7 @@
     "eslint-plugin-promise": "^6.2.0",
     "eslint-plugin-react": "^7.34.3",
     "ga-lite": "^2.1.6",
-    "highlight.js": "^11.9.0",
+    "highlight.js": "^11.10.0",
     "image-size": "^1.1.1",
     "imagemin-cli": "^8.0.0",
     "jpegtran-bin": "^7.0.0",
