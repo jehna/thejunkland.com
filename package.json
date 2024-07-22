@@ -57,7 +57,7 @@
     "sitemap": "^8.0.0",
     "ts-node": "^10.9.2",
     "twitter-api-sdk": "^1.2.1",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.4",
     "yaml-front-matter": "^4.1.1"
   },
   "dependencies": {
