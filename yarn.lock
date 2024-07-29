@@ -4258,10 +4258,10 @@ marked-highlight@^2.1.2:
   resolved "https://registry.yarnpkg.com/marked-highlight/-/marked-highlight-2.1.2.tgz#ab97fb7762f6d38dac0e4e786c4567420821093f"
   integrity sha512-LttLexvzVYbdCWcjx5Upevtm1RAQ2965DyRMWfKzhpWwORPLeJay5Gp8lC4OfMs56QyfV/zIYeknp4NbTAfD0A==
 
-marked@*, marked@^13.0.0:
-  version "13.0.0"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.0.tgz#c18cda8a1fd0055859060c971e30f57beb79fd46"
-  integrity sha512-VTeDCd9txf4KLLljUZ0nljE/Incb9SrWuueE44QVuU0pkOdh4sfCeW1Z6lPcxyDRSVY6rm8db/0OPaN75RNUmw==
+marked@*, marked@^13.0.3:
+  version "13.0.3"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.3.tgz#5c5b4a5d0198060c7c9bc6ef9420a7fed30f822d"
+  integrity sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==
 
 marky@^1.2.0, marky@^1.2.2:
   version "1.2.5"
