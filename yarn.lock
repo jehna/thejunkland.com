@@ -4253,10 +4253,10 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
   integrity sha512-7N/q3lyZ+LVCp7PzuxrJr4KMbBE2hW7BT7YNia330OFxIf4d3r5zVpicP2650l7CPN6RM9zOJRl3NGpqSiw3Eg==
 
-marked-highlight@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/marked-highlight/-/marked-highlight-2.1.2.tgz#ab97fb7762f6d38dac0e4e786c4567420821093f"
-  integrity sha512-LttLexvzVYbdCWcjx5Upevtm1RAQ2965DyRMWfKzhpWwORPLeJay5Gp8lC4OfMs56QyfV/zIYeknp4NbTAfD0A==
+marked-highlight@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/marked-highlight/-/marked-highlight-2.1.4.tgz#33d4d74b55e5acc76ee95fa5117e847795392a42"
+  integrity sha512-D1GOkcdzP+1dzjoColL7umojefFrASDuLeyaHS0Zr/Uo9jkr1V6vpLRCzfi1djmEaWyK0SYMFtHnpkZ+cwFT1w==
 
 marked@*, marked@^13.0.0:
   version "13.0.0"
